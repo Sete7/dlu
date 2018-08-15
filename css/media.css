@@ -1,0 +1,49 @@
+@media(max-width: 1590px){
+    .box-desc-menu h1 { margin: 3rem 0 1rem 0;}
+    .box-desc-menu header { margin-bottom: 2rem;}
+}
+@media(max-width: 1500px){
+    /*.box-desc-menu h1 { margin: 3rem 0 1rem 0;}*/
+}
+@media(max-width: 1430px){.box-interation {padding-top: 20%;}}
+@media(max-width: 970px){
+    /*----------MENU ------------*/
+    .menu{display: none;}
+    .menu-right {display: none;}
+    .box-interation{display: none;}
+    
+}
+@media(max-width: 1270px){
+    .box-desc-menu .box-btn-black {
+    margin: 2rem 0 2rem 0;}
+}
+
+@media(max-width: 1210px){
+    /*------------INFO TOPO----------*/
+    .from-city .phone { margin-left: 1rem;}
+    /*-----------logo-------------*/
+    .box-logo {width: 10rem; height: 10rem;margin: -5% 40%;}
+    /*----------MENU ------------*/
+    .menu li {padding-left: 1.5rem;}
+    .menu-right li {padding-left: 1.5rem;}    
+    .slider_controll{display: none;}
+    
+    .box-controlslide {display: none;}
+}
+
+@media(max-width: 1060px){
+    .from-city {width: 100%;text-align: center;}
+    .div-social{width: 100%;text-align: center;}
+    
+    .box-desc-menu header {margin-bottom: 0.9rem;}
+    .sec-post h1 { font-size: 2.5em;}
+    .box-reserva h1 {font-size: 2.5em;}
+    .box-desc-menu h1 {font-size: 2.5em;margin: 2rem 0 0.5rem 0;}
+    .box-desc-menu p { margin: 0 15%;}
+    .box-desc-menu .box-btn-black {margin: 2rem 0;}
+        
+    
+}
+
+
+
