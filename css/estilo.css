@@ -8,7 +8,7 @@
 .container{width: 100%;}
 .content{width: 80%;margin: 0 10%;}
 .clear{clear: both;}
-img{width: 100%;max-width: 100%;}
+img{width: 100%;}
 ul{list-style: none;}
 a{color: #333;text-decoration: none;}
 .cl-branca{color: #fff;}
@@ -74,6 +74,8 @@ a{color: #333;text-decoration: none;}
 .box-interation .btn-slider{border:0; background: transparent;padding: 1% 1.5%;font-size: 1.1em;font-weight: 600; margin-bottom: 15px;background: #fff;}
 .box-interation .btn-slider:hover{background: #000;color: #fff;}
 .jcarousel img{width: 100%;height: 100%;}
+/*------------------------BANNER MOBILLER---------------------*/
+.banner-mobile{display: none;}
 /*------------------------------------------------------*/
 #animation
 {
@@ -129,7 +131,7 @@ a{color: #333;text-decoration: none;}
 .box-reserva h1{margin: 100px 10px 20px 0;font-size: 3.7em;font-weight: 300;font-family: "Open Sans", serif;}
 .box-reserva p{margin-bottom: 30px;font-size: 0.9em;}
 .box-btn-reservar{width: 100%;float: left;margin-bottom: 100px;}
-.btn-reservar-two{width: 50%;     padding: 3% 6%; line-height: 2.5;border: 1px solid #000;background: transparent;text-align: center;margin: 0 25%;}
+.btn-reservar-two{padding: 1rem 2rem; line-height: 2.5;border: 1px solid #000;background: transparent;text-align: center;margin: 0;}
 .btn-reservar-two:hover{background: #000; color: #fff;}
 /*-------------------------SECAO CARDÁPIO------------------*/
 .sec-menu{background: #000;}
@@ -138,7 +140,7 @@ a{color: #333;text-decoration: none;}
 .box-desc-menu h1{font-size: 3.7em;font-weight: 300;font-family: "Open Sans", serif;    margin: 7rem 0 2.5rem 0;}
 .box-desc-menu p{font-size: 0.9em; font-weight: 300;margin: 0 7.5%;}
 .box-desc-menu .box-btn-black{width: 100%;float: left;margin: 5rem 0;}
-.box-desc-menu .box-btn-black .btn-white{width: 30%;padding: 2% 6%;font-weight: bold;margin: 0 35%;border: 1px solid #fff;color: #fff; background: transparent;}
+.box-desc-menu .box-btn-black .btn-white{padding: 1rem 2rem;font-weight: bold;border: 1px solid #fff;color: #fff; background: transparent;}
 .box-desc-menu .box-btn-black .btn-white:hover{background: #fff;color: #000;}
 .box-thumb{width: 50%; float: left;}
 .box-thumb img{float: left;}
@@ -159,11 +161,11 @@ a{color: #333;text-decoration: none;}
 .box-varieti .desc-varieti .sec-title .tagline{font-size: 1.1em; color: #967a19;text-transform: uppercase;font-family: 'Cabin', sans-serif;}
 .box-varieti .desc-varieti p{font-size: 0.9em; color: #fff;   margin: 1rem 4rem;}
 .box-varieti .desc-varieti .box-btn-veja{width: 100%;float: left;margin-top: 5%;}
-.box-varieti .desc-varieti .box-btn-veja .btn-veja{width: 30%;padding: 2% 6%;font-weight: bold;margin: 0 35%;border: 1px solid #fff;color: #fff; background: transparent;}
+.box-varieti .desc-varieti .box-btn-veja .btn-veja{padding: 0.5rem 1rem;font-weight: bold;border: 1px solid #fff;color: #fff; background: transparent;}
 .box-varieti .desc-varieti .box-btn-veja .btn-veja:hover{background: #fff;color: #000;}
 
 .sec-scrumptious{text-align: center;}
-.sec-scrumptious .sec-title{margin:50px 0 20px 0;width: 50%;margin: 0 25%;margin-bottom: 100px;}
+.sec-scrumptious .sec-title{width: 50%;margin: 0 25%;margin-bottom: 100px;}
 .sec-scrumptious .sec-title h1{font-size: 3.7em;text-transform: uppercase;font-weight: 300;font-family: "Open Sans", serif;margin-bottom: 10px;   margin-top: 50px}
 .sec-scrumptious .sec-title .tagline{font-size: 1.1em; color: #967a19;text-transform: uppercase;font-family: 'Cabin', sans-serif; margin-bottom: 20px;}
 .sec-scrumptious .sec-title p{font-size: 0.9em;}
@@ -175,7 +177,7 @@ a{color: #333;text-decoration: none;}
 .li-desc-rec .box-desc-rec .sec-title h2{font-size: 1.8em;font-weight: 300;  margin: 1rem 0 0.5rem 0;}
 .li-desc-rec .box-desc-rec .sec-title .txt-rec{font-size: 1.1em;margin-bottom: 2rem;}
 .li-desc-rec .box-desc-rec .box-btn-rec{width: 100%;float: left;margin-bottom: 5rem;}
-.li-desc-rec .box-desc-rec .box-btn-rec .btn-rec{width: 30%;padding: 2% 6%;font-weight: bold;  margin: 0 35%;border: 1px solid #fff;color: #fff; background: transparent;}
+.li-desc-rec .box-desc-rec .box-btn-rec .btn-rec{padding: 0.5rem 2rem;font-weight: bold;border: 1px solid #fff;color: #fff; background: transparent;}
 .li-desc-rec .box-desc-rec .box-btn-rec .btn-rec:hover{background: #fff;color: #000;}
 
 /*--------------------------LISTAGEM DE PRATOS--------------------*/
@@ -205,7 +207,7 @@ a{color: #333;text-decoration: none;}
 .lista-pratos .box-list-prato .box-desc-prato .text-title-1:after{content: "";width: 100%;height: 2px;background: rgba(0,0,0,0.7);display: block;}
 .lista-pratos .box-list-prato .box-desc-prato .text-title-2{font-size: 0.9em;text-align: left; float: left;margin: 0;}
 .box-lt-receitas{width: 100%;clear: both; }
-.btn-lt-receitas{width: 30%; padding: 2% 6%;background: transparent; border: 1px solid #000;margin: 25px  35%; }
+.btn-lt-receitas{padding: 2% 6%;background: transparent; border: 1px solid #000;margin: 25px 0; }
 .btn-lt-receitas:hover{background: #000;color: #fff;font-weight: bold;}
 
 /* ------------------------------------------------ GRID DE PRATOS -------------------------------- */
@@ -225,7 +227,7 @@ a{color: #333;text-decoration: none;}
 
 /* ------------------------------------------------ SEC RESERVATION DE TABLE -------------------------------- */
 .sec-resevation{position: relative;float: left;}
-.desc-resevation{width: 100%;float: left;text-align: center;padding: 0 5%;margin-bottom: 50px;padding: 0 30%;}
+.desc-resevation{width: 100%;float: left;text-align: center;margin-bottom: 50px;padding: 0 30%;}
 .desc-resevation h1{font-size: 3.7em;font-family: "Open Sans", serif;font-weight: 300;margin-top: 50px;}
 .desc-resevation h2{font-size: 2em; font-weight: 300;color: #967a19;margin-bottom: 20px;}
 .desc-resevation p{font-size: 0.9em;}

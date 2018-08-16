@@ -15,7 +15,7 @@
     <body>
         <!--http://tamarind.imaginem.co-->
         <!--------------------------------------------------------CABECALHO-------------------------->
-     <center>
+    <center>
         <header class="main-header container">
             <!-----------------SOCIAL TOPO ------------------>
             <div class="box-social-topo">                
@@ -45,17 +45,17 @@
             </div>
 
             <!-----------------LOGO & MENU ------------------>
-   
+
             <div class="content">
                 <div class="box-menu">
-                 
-                        <div class="box-logo">
-                            <a href="#">
-                                <h1 class="font-zero">D'Lurdes</h1>
-                                <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="300px;"/>
-                            </a>
-                        </div>
-                
+
+                    <div class="box-logo">
+                        <a href="#">
+                            <h1 class="font-zero">D'Lurdes</h1>
+                            <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="300px;"/>
+                        </a>
+                    </div>
+
 
                     <div class="navbar">
                         <ul class="menu">
@@ -90,12 +90,12 @@
                     </div>
                 </div>                
             </div>
-    
+
             <i class="ion-bag"></i>
 
             <div class="clear"></div>
         </header>
- </center>
+    </center>
     <!--------------------------------- SLIDE SITE -------------------------------->
     <main class="main_content container">
         <?php
@@ -150,6 +150,11 @@
         <div class="box-interation">                    
             <a href="#" class="btn-slider">SAIBA MAIS</a>
             <div id="animation" class="anima-pan"></div>
+        </div>
+    </main>
+    <main>
+         <div class="banner-mobile">
+            <img src="img/img-mobille.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>
         </div>
     </main>
     <!--------------------------------------------------CONTEUDO----------------------------------------->
@@ -306,8 +311,9 @@
                                             <div class="sec-title">
                                                 <h2>Bife a cavalo</h2>
                                                 <p class="txt-rec">
-                                                    Culinária fácil, aprenda a preparar
-                                                    pratos básicos da cozinha brasileira
+                                                    <!--                                                    Culinária fácil, aprenda a preparar
+                                                                                                        pratos básicos da cozinha brasileira-->
+                                                    Culinária fácil...
                                                 </p>
                                             </div>
                                             <div class="box-btn-rec">
