@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará.</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará.</title>        
         <link href="img/favicon.fw.png" rel="shortcut icon"> 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -18,30 +20,40 @@
     <center>
         <header class="main-header container">
             <!-----------------SOCIAL TOPO ------------------>
-            <div class="box-social-topo">                
-                <div class="social-header">
-                    <div class="from-city">
-                        <a class="enderece" href="https://goo.gl/maps/Mv8kujtnm7S2" target="_blanck">            
-                            <i class="fa fa-map"></i>ENDEREÇO: Guará II 30 Cj K 9, Brasília - DF
-                        </a>
-                        <a class="phone" href="#">                    
-                            <i class="fa fa-phone-square"></i>   Telefone: (61) 3382-6625
-                        </a>
-                    </div>
+            <div class="box-social-topo">  
+                <center>
+                    <div class="social-header">                    
+                        <div class="logo-topo-mob">
+                            <img class="lg-topo" src="img/logo3.png" alt="" style="width: 100px;"/>
+                        </div>
+                        
+                        <div class="box-reserva-topo">
+                            <a href="#" class="btn-rezerva-topo">FAZER RESERVA</a>
+                        </div>                  
 
-                    <div class="div-social">
-                        <a href="https://www.facebook.com/dlurdesguara/?ref=page_internal" class="face" target="_blanck" title="Facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>                   
-                        <a  class="tripad"  href="https://www.tripadvisor.com.br/Restaurant_Review-g2572086-d4784343-Reviews-D_Lurdes-Guara_Federal_District.html"  target="_blanck"  title="TripadVisor">                                    
-                            <i class="fa fa-tripadvisor"></i>
-                        </a>
+                        <div class="from-city">
+                            <a class="enderece" href="https://goo.gl/maps/Mv8kujtnm7S2" target="_blanck">            
+                                <i class="fa fa-map"></i>ENDEREÇO: Guará II 30 Cj K 9, Brasília - DF
+                            </a>
+                            <a class="phone" href="#">                    
+                                <i class="fa fa-phone-square"></i>   Telefone: (61) 3382-6625
+                            </a>
+                        </div>
 
-                        <a  class="instam"  href="https://www.instagram.com/explore/locations/227506531050754/dlurdes-guara/?hl=pt"  target="_blanck" title="Instagram">            
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>     
-                </div> 
+                        <div class="div-social">
+                            <a href="https://www.facebook.com/dlurdesguara/?ref=page_internal" class="face" target="_blank" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>                   
+                            <a  class="tripad"  href="https://www.tripadvisor.com.br/Restaurant_Review-g2572086-d4784343-Reviews-D_Lurdes-Guara_Federal_District.html"  target="_blanck"  title="TripadVisor">                                    
+                                <i class="fa fa-tripadvisor"></i>
+                            </a>
+
+                            <a  class="instam"  href="https://www.instagram.com/explore/locations/227506531050754/dlurdes-guara/?hl=pt"  target="_blanck" title="Instagram">            
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>     
+                    </div> 
+                </center>
             </div>
 
             <!-----------------LOGO & MENU ------------------>
@@ -122,7 +134,7 @@
                     <picture alt="Fortaleza">
                         <source media="(min-width: 1280px)" srcset="tim.php?src=uploads/01.jpg&w=1366&h=400" />
                     </picture> 
-                    <img src="img/slider-banne1.jpg" alt="Banner" title="Promoções D'Lurdes"/>
+                    <img src="img/slider-banne1.jpg" alt="Banner" title="Promoções D'Lurdes"/>                 
                 </a>
             </article>
             <?php
@@ -135,7 +147,7 @@
                     <picture alt="Fortaleza">
                         <source media="(min-width:1600px)" srcset="tim.php?src=uploads/01.jpg&w=200&h=600">
                     </picture>    
-                    <img src="img/slider-banne2.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>
+                    <img src="img/slider-banne2.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>                
                 </a>
             </article>
             <?php
@@ -152,9 +164,11 @@
             <div id="animation" class="anima-pan"></div>
         </div>
     </main>
-    <main>
-         <div class="banner-mobile">
-            <img src="img/img-mobille.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>
+    <main class="container">
+        <div class="banner-mobile">         
+            <img src="img/banner-mob-to-p-a.jpg"  class="mobi-700" alt="Banner" title="Rodizio D'Lurdes"/>
+            <img src="img/banner-mob-top-320.jpg" class="mobi-400"  alt="Banner" title="Rodizio D'Lurdes"/>
+            <div class="mirros-color"></div>
         </div>
     </main>
     <!--------------------------------------------------CONTEUDO----------------------------------------->
@@ -429,7 +443,7 @@
                         <input type="tel" class="phone" name="phone" placeholder="Phone*" required/>
                     </label>
                     <label><i class="fa fa-calendar"></i>
-                        <input type="date" class="calendar" name="date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>
+                        <input type="date" class="calendar" name="date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>                        
                     </label>
 
                     <label>
