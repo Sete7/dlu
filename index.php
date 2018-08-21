@@ -26,7 +26,7 @@
                         <div class="logo-topo-mob">
                             <img class="lg-topo" src="img/logo3.png" alt="" style="width: 100px;"/>
                         </div>
-                        
+
                         <div class="box-reserva-topo">
                             <a href="#" class="btn-rezerva-topo">FAZER RESERVA</a>
                         </div>                  
@@ -59,15 +59,53 @@
             <!-----------------LOGO & MENU ------------------>
 
             <div class="content">
-                <div class="box-menu">
 
+                <div class="sidebar">
+                    <ul class="menu-mob">
+                        <li>
+                            <div class="box-logo-mob">
+                                <a href="#">                                
+                                    <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="200px"/>
+                                </a>
+                            </div>
+                        </li>                            
+                        <li>
+                            <a href="#" title="Início">Início</a>
+                        </li>                            
+                        <li>
+                            <a href="#" title="Quem Somos">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Cardápio">Cardápio</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Cardápio">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Cardápio">Contato</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Cardápio">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Reserva">
+                                Fazer Reserva
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="sidebarBtn">
+                        <span></span>
+                    </button>
+                </div>
+
+                <div class="box-menu">
                     <div class="box-logo">
                         <a href="#">
                             <h1 class="font-zero">D'Lurdes</h1>
                             <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="300px;"/>
                         </a>
                     </div>
-
 
                     <div class="navbar">
                         <ul class="menu">
@@ -82,6 +120,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="navbar-right">
                         <ul class="menu-right">
                             <li class="li-right">
@@ -100,6 +139,7 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>                
             </div>
 
@@ -186,10 +226,10 @@
                 <div class="thumb">
 
                     <div class="jcarousel-wrapper">
-                        <div class="box-controlslide">
+                        <div class="box-controlslide control-one">
                             <!-- Prev/next controls -->
-                            <a href="#" class="jcarousel-control-next next"><i class="fa fa-long-arrow-left"></i></a>
-                            <a href="#" class="jcarousel-control-prev prev"><i class="fa fa-long-arrow-right"></i></a>
+                            <a href="#" class="jcarousel-control-next next next-one"><i class="fa fa-long-arrow-left"></i></a>
+                            <a href="#" class="jcarousel-control-prev prev prev-one"><i class="fa fa-long-arrow-right"></i></a>
                         </div>
                         <!-- Carousel -->
                         <div class="jcarousel">
@@ -600,7 +640,7 @@
                         </div>
                     </article>
                     <div class="clear"></div>
-                </div>
+                </div>               
             </section>
         </center>
 
@@ -610,6 +650,7 @@
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="js/scriptSite.js"></script>
     <script src="js/jcarousel.skeleton.js"></script>
     <script src="js/jquery.jcarousel.min.js"></script>
     <script src="js/jcarousel.responsive.js"></script>

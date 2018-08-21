@@ -36,6 +36,8 @@ a{color: #333;text-decoration: none;}
 .social-header i{font-size: 1.2em;}
 /*-----------------------MENU----------------------*/
 .box-menu{float: left;width: 100%;height: auto;z-index: 3;padding-top: 5px;position: relative;}
+/*-------NAVEGADOR MOBILE NONE------------*/
+.sidebar{display: none;}
 /*----------------------LOGO-------------------------*/
 .logo-topo-mob, .box-reserva-topo{display: none;}
 .box-logo{position: absolute;width: 15rem;height: 15rem;margin-left: 44.8%;  }
@@ -58,7 +60,8 @@ a{color: #333;text-decoration: none;}
 
 /*----------------------- SLIDE --------------------------------*/
 .main_content{width: 100%; float: left;position: relative; }
-.slider{background: #fff; position: relative; display: block;}
+/*.slider{background: #fff; position: relative; height: 512px; display: block;}*/
+.slider{background: #fff; position: relative; height: 35rem auto; display: block;}
 .slider_controll{position: absolute; width: 100%; top: 15em;}
 .slide_nav{position: absolute; padding: 10px; font-size: 2em; background: rgba(255,255,255,0.3);color: #fff; cursor: pointer; z-index: 3; border-radius: 5%; -moz-border-radius: 5%; -webkit-border-radius: 5%;}
 .slide_nav.go{right: 3%;}
