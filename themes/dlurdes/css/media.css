@@ -53,7 +53,7 @@
     .menu-right li {display: none;}    
     .slider_controll{display: none;}
 
-    .box-controlslide {display: none;}
+    /*.box-controlslide {display: none;}*/
     /*----------------------DESCRICAO VARIEDADE----------------*/
     .box-varieti .desc-varieti p { margin: 0.5rem 4rem;}
     .li-desc-rec .box-desc-rec .sec-title h2 {font-size: 1.2em; font-weight: 400;margin: 0;}
@@ -156,6 +156,8 @@
     .box-logo { margin: -3% 54%;}
     .box-interation .btn-slider {margin-right: -6rem;}
     #animation { margin-left: 495px;margin-top: 8px;}
+    .control-two{position: relative; top: -60px;}
+    .control-three{position: relative; top: -60px;}
 }
 
 @media(max-width: 1000px){
@@ -246,7 +248,11 @@
     .time-function .dye { width: calc(100% - 20px); margin: 2rem 10px;}
     .box-logo-footer { margin: 0.5rem 0;}
 }
-@media(max-width: 560px){.lista-pratos .box-list-prato .box-desc-prato .text-title-1 .price {position: relative;}}
+@media(max-width: 560px){
+    .lista-pratos .box-list-prato .box-desc-prato .text-title-1 .price {position: relative;}
+    .grid-pratos .camada-color-plates  h1{display: block;position: absolute;bottom: 50px;}
+    .grid-pratos .camada-color-plates p{display: block;position: absolute;bottom: 20px;}
+}
 @media(max-width: 450px){
     .box-logo{position: relative;margin: 20% 0;    left: 10px;}
     .box-reserva { width: 95%; margin: 100px 2.5%; padding: 0 1.5rem;}

@@ -1,3 +1,6 @@
+<?php
+require_once './app/config.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -5,14 +8,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <title>D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará.</title>        
-        <link href="img/favicon.fw.png" rel="shortcut icon"> 
+        <link href="<?= REQUIRE_PATH; ?>/img/favicon.fw.png" rel="shortcut icon"> 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
-        <link href="css/jcarousel.skeleton.css" rel="stylesheet" type="text/css"/>
-        <link href="css/media.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= REQUIRE_PATH; ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= REQUIRE_PATH; ?>/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= REQUIRE_PATH; ?>/css/jcarousel.skeleton.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= REQUIRE_PATH; ?>/css/media.css" rel="stylesheet" type="text/css"/>        
+        <script type="text/javascript" src="<?= REQUIRE_PATH; ?>/jcarousel.basic.js"></script>
     </head>
     <body>
         <!--http://tamarind.imaginem.co-->
@@ -24,7 +28,7 @@
                 <center>
                     <div class="social-header">                    
                         <div class="logo-topo-mob">
-                            <img class="lg-topo" src="img/logo3.png" alt="" style="width: 100px;"/>
+                            <img class="lg-topo" src="<?= REQUIRE_PATH; ?>/img/logo3.png" alt="" style="width: 100px;"/>
                         </div>
 
                         <div class="box-reserva-topo">
@@ -64,31 +68,31 @@
                     <ul class="menu-mob">
                         <li>
                             <div class="box-logo-mob">
-                                <a href="#">                                
-                                    <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="200px"/>
+                                <a href="<?= HOME; ?>/">                                
+                                    <img src="<?= REQUIRE_PATH; ?>/img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="200px"/>
                                 </a>
                             </div>
                         </li>                            
                         <li>
-                            <a href="#" title="Início">Início</a>
+                            <a href="<?= HOME; ?>" title="Início">Início</a>
                         </li>                            
                         <li>
-                            <a href="#" title="Quem Somos">Quem Somos</a>
+                            <a href="<?= HOME; ?>/quem-somos" title="Quem Somos">Quem Somos</a>
                         </li>
                         <li>
-                            <a href="#" title="Cardápio">Cardápio</a>
+                            <a href="<?= HOME; ?>/cardapio" title="Cardápio">Cardápio</a>
                         </li>
                         <li>
-                            <a href="#" title="Cardápio">Blog</a>
+                            <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                         </li>
                         <li>
-                            <a href="#" title="Cardápio">Contato</a>
+                            <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                         </li>
                         <li>
-                            <a href="#" title="Cardápio">Eventos</a>
+                            <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
                         </li>
                         <li>
-                            <a href="#" title="Reserva">
+                            <a href="<?= HOME; ?>/reserva" title="Reserva">
                                 Fazer Reserva
                             </a>
                         </li>
@@ -101,22 +105,22 @@
 
                 <div class="box-menu">
                     <div class="box-logo">
-                        <a href="#">
+                        <a href="<?= HOME; ?>">
                             <h1 class="font-zero">D'Lurdes</h1>
-                            <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="300px;"/>
+                            <img src="<?= INCLUDE_PATH; ?>/img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="300px;"/>
                         </a>
                     </div>
 
                     <div class="navbar">
                         <ul class="menu">
                             <li>
-                                <a href="#" title="Início">Início</a>
+                                <a href="<?= HOME; ?>" title="Início">Início</a>
                             </li>                            
                             <li>
-                                <a href="#" title="Quem Somos">Quem Somos</a>
+                                <a href="<?= HOME; ?>/quem-somos" title="Quem Somos">Quem Somos</a>
                             </li>
                             <li>
-                                <a href="#" title="Cardápio">Cardápio</a>
+                                <a href="<?= HOME; ?>/cardapio" title="Cardápio">Cardápio</a>
                             </li>
                         </ul>
                     </div>
@@ -124,17 +128,17 @@
                     <div class="navbar-right">
                         <ul class="menu-right">
                             <li class="li-right">
-                                <a href="#" title="Blog">Blog</a>
+                                <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                             </li>
                             <li>
-                                <a href="#" title="Contato">Contato</a>
+                                <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                             </li>
                             <li>
-                                <a href="#" title="Eventos">Eventos</a>
+                                <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
                             </li>
                             <li>
                                 <div class="reserva btn">
-                                    <a href="#" class="btn-reservar">Reserva</a>
+                                    <a href="<?= HOME; ?>/reserva" class="btn-reservar">Reserva</a>
                                 </div>
                             </li>
                         </ul>
@@ -148,401 +152,21 @@
             <div class="clear"></div>
         </header>
     </center>
-    <!--------------------------------- SLIDE SITE -------------------------------->
-    <main class="main_content container">
-        <?php
-//        $tamMobile = "Grande";
-//        $sliderMobile = $sliderController->ListarTamanhoSlider($tamMobile);
-//        if ($sliderMobile == null):
-//        else:
-        ?>
-        <section class="slider">
-            <h1 class="font-zero">Últimas do site:</h1>
-            <div class="slider_controll">
-                <div class="slide_nav back"><i class="fa fa-chevron-left"></i></div>
-                <div class="slide_nav go"><i class="fa fa-chevron-right"></i></div>
-            </div>            
-
+    
+    <!-- --------------------------------- CONTEUDO ---------------------------- -->
             <?php
-//                $controle_active = 2;
-//                foreach ($sliderMobile as $sli):
-//                    if ($controle_active == 2):
+            $Url[1] = (empty($Url[1]) ? null : $Url[1]);
+            if (file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')):
+                require REQUIRE_PATH . '/' . $Url[0] . '.php';
+            elseif (file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')):
+                require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php';
+            else:
+                require REQUIRE_PATH . '/404.php';
+            endif;
             ?>
-            <article class="slider_item first">
-                <h1 class="font-zero">Banner</h1>
-                <a href="#"  title="" class="box-slider">
-                    <picture alt="Fortaleza">
-                        <source media="(min-width: 1280px)" srcset="tim.php?src=uploads/01.jpg&w=1366&h=400" />
-                    </picture> 
-                    <img src="img/slider-banne1.jpg" alt="Banner" title="Promoções D'Lurdes"/>                 
-                </a>
-            </article>
-            <?php
-//                        $controle_active = 1;
-//                    else:
-            ?>
-            <article class="slider_item">
-                <h1 class="font-zero">Banner</h1>
-                <a href="#"  title="" class="box-slider">
-                    <picture alt="Fortaleza">
-                        <source media="(min-width:1600px)" srcset="tim.php?src=uploads/01.jpg&w=200&h=600">
-                    </picture>    
-                    <img src="img/slider-banne2.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>                
-                </a>
-            </article>
-            <?php
-//                    endif;
-//                endforeach;
-            ?>              
-        </section>
-        <?php
-//        endif;
-        ?>
+    <!-- --------------------------------- CONTEUDO ---------------------------- -->       
 
-        <div class="box-interation">                    
-            <a href="#" class="btn-slider">SAIBA MAIS</a>
-            <div id="animation" class="anima-pan"></div>
-        </div>
-    </main>
-    <main class="container">
-        <div class="banner-mobile">         
-            <img src="img/banner-mob-to-p-a.jpg"  class="mobi-700" alt="Banner" title="Rodizio D'Lurdes"/>
-            <img src="img/banner-mob-top-320.jpg" class="mobi-400"  alt="Banner" title="Rodizio D'Lurdes"/>
-            <div class="mirros-color"></div>
-        </div>
-    </main>
-    <!--------------------------------------------------CONTEUDO----------------------------------------->
-    <main class="main-home container">
-        <section class="sec-post content">
-            <h1>O MELHOR DA CULINÁRIA</h1>  
-            <div class="desc-sec-post">  
-                <p class="tagline">PRATOS TÍPICOS DA CULINÁRIA MINEIRA.</p>
-                <p>
-                    Conheça iguarias típicas da região que reúne tradição, simplicidade e muito sabor.
-                </p>
-            </div>            
-            <!------------------SLIDER POST SOBREMESA------------------->
-            <div class="box-imagedrop">
-                <div class="thumb">
-
-                    <div class="jcarousel-wrapper">
-                        <div class="box-controlslide control-one">
-                            <!-- Prev/next controls -->
-                            <a href="#" class="jcarousel-control-next next next-one"><i class="fa fa-long-arrow-left"></i></a>
-                            <a href="#" class="jcarousel-control-prev prev prev-one"><i class="fa fa-long-arrow-right"></i></a>
-                        </div>
-                        <!-- Carousel -->
-                        <div class="jcarousel">
-                            <ul> 
-                                <li><img src="img/bf-cv.jpg"  alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                                <li><img src="img/pastas.jpg" alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                                <li><img src="img/bf-cv.jpg" alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                                <li><img src="img/galinhada.jpg" alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                                <li><img src="img/bf-cv.jpg" alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                                <li><img src="img/galinhada.jpg" alt="Pratos Típicos" title="Pratos Típicos"/></li>
-                            </ul>
-                        </div>
-                        <!-- Pagination -->
-<!--                            <p class="jcarousel-pagination">
-                             Pagination items will be generated in here 
-                        </p>-->
-
-                    </div>
-                </div>                    
-            </div>    
-            <div class="clear"></div>                
-        </section>
-
-        <section class="sec-memorable container">
-            <div class="box-reserva">
-                <header>
-                    <h1>QUEM SOMOS</h1>                
-                    <p class="tagline">D'Lurdes</p>
-                </header>
-                <p class="cl-rgba-cinza">
-                    A dedicação transborda as panelas da dona Lurdes Cardoso.
-                    O apreço pelo o que faz é tão grande que os funcionários do 
-                    restaurante não pensaram duas vezes antes de apelida-la 
-                    carinhosamente de vovozinha.
-                </p>
-
-                <div class="box-btn-reservar">
-                    <a href="#" class="btn-reservar-two" >SAIBA MAIS</a>
-                </div>  
-            </div>           
-            <div class="clear"></div>
-        </section>
-
-        <!---------------------------------------LISTAGEM DE CARDÁPIO---------------------------------------->
-        <section class="sec-menu container">            
-            <div class="box-desc-menu">
-                <header>
-                    <h1> Chocolate Mochas </h1>
-                    <p class="tagline">Coffee Menu</p>
-                </header>
-
-                <p>
-                    Uma das melhores sobremesas da cidade de Brasília, 
-                    D'lurdes tem uma ótima sobremesa de acompanhamento
-                    para vc se deliciar da nossa culinária.
-                </p>
-                <div class="box-btn-black">
-                    <a href="#" class="btn-white">
-                        Veja Mais
-                    </a>
-                </div>
-            </div>
-            <div class="box-thumb">
-                <img src="img/our-staff-image.jpg" alt=""/>
-            </div>
-            <div class="clear"></div>
-        </section>
-        <!---------------------------------------VARIEDADES---------------------------------------->
-        <section class="sec-varieti container">          
-            <div class="box-varieti">
-                <div class="thumb-two">
-                    <img src="img/photocard-2.jpg" alt="Uma das melhores sobremesas" title="Uma das melhores sobremesas"/>
-                </div>
-
-                <div class="desc-varieti">
-                    <header class="sec-title">
-                        <h1>Sobremesas</h1>
-                        <p class="tagline">VARIEDADES DE COMIDA</p>
-                    </header>
-                    <p>
-                        Uma das melhores sobremesas da cidade de Brasília, 
-                        D'lurdes tem uma ótima sobremesa de acompanhamento
-                        para vc se deliciar da nossa culinária.
-                    </p>
-
-                    <div class="box-btn-veja">
-                        <a href="#" class="btn-veja">
-                            Veja Mais
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="clear"></div>
-        </section>
-
-
-
-        <!--------------------------------------- SOBREMESA ---------------------------------------->
-        <section class="sec-scrumptious container">
-            <div class="sec-title">
-                <h1>Deliciosas</h1>
-                <p class="tagline">RECEITAS DELICIOSAS</p>
-
-                <p>
-                    Para fazer sobremesas fáceis, bonitas e saborosas,
-                    não é preciso gastar muito tempo na cozinha, nem muito dinheiro.
-                    Se receitas práticas, rápidas, baratas e com poucos
-                    ingredientes são a sua praia, você está no lugar certo. 
-                </p>
-            </div>
-
-
-            <!------------------SLIDER POST SOBREMESA------------------->
-            <div class="box-slider-rec">
-                <div class="receitas">
-
-                    <div class="jcarousel-wrapper">
-                        <div class="box-controlslide">
-                            <!-- Prev/next controls -->
-                            <a href="#" class="jcarousel-control-next next"><i class="fa fa-long-arrow-left"></i></a>
-                            <a href="#" class="jcarousel-control-prev prev"><i class="fa fa-long-arrow-right"></i></a>
-                        </div>
-                        <!-- Carousel -->
-                        <div class="jcarousel">
-                            <ul>
-                                <?php
-                                for ($i = 1; $i <= 8; $i++) {
-                                    ?>                                    
-                                    <li class="li-desc-rec">                                         
-                                        <img src="img/bf-cv.jpg" width="600" height="400" alt="BIFE A CAVALO" title="BIFE A CAVALO"/>
-                                        <div class="box-desc-rec">
-                                            <div class="sec-title">
-                                                <h2>Bife a cavalo</h2>
-                                                <p class="txt-rec">
-                                                    <!--                                                    Culinária fácil, aprenda a preparar
-                                                                                                        pratos básicos da cozinha brasileira-->
-                                                    Culinária fácil...
-                                                </p>
-                                            </div>
-                                            <div class="box-btn-rec">
-                                                <a href="#" class="btn-rec">
-                                                    Veja Mais
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <?php
-                                }
-                                ?> 
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>                    
-            </div>
-
-            <div class="clear"></div>
-        </section>
-        <!---------------------------------------LISTAGEM DE CARDÁPIO---------------------------------------->
-        <section class="sec-pratos container">
-            <div class="box-pratos">
-                <h1>Especial semanal</h1>
-                <p>
-                    Nosso cardápio apresenta entradas deliciosas,
-                    pratos deliciosos, saborosos acompanhamentos e sobremesas deliciosas.
-                    Dê uma olhada nos nossos destaques tentadores da semana.
-                </p>
-                <img class="thumb-prato" src="img/logo2.png" alt="" style="width: 100px;"/>
-
-                <div class="lista-pratos">
-                    <?php
-                    for ($i = 1; $i <= 7; $i++) {
-                        ?>
-                        <article class="box-list-prato">
-                            <a class="box-thumb-list"  href="#">                                                 
-                                <img src="img/pizza.jpg"  alt="RECOMENDAÇÃO DO CHEFE" title="PIZZA PORTUGUESA "/>
-
-                            </a>
-                            <div class="box-desc-prato">
-                                <h1><a href="#">RECOMENDAÇÃO DO CHEFE</a></h1>
-                                <h2 class="text-title-1"> PIZZA PORTUGUESA <span>Segunda-feira, 01/09/2018</span> <span class="price">R$30.95</span></h2>
-                                <p class="text-title-2">
-                                    Presunto, ovos cozidos, cebola e azeitonas pretas...
-                                </p>
-                            </div>                                
-                        </article>
-                        <?php
-                    }
-                    ?>
-                    <div class="box-lt-receitas">
-                        <a class="btn-lt-receitas" href=""> VEJA MAIS</a>
-                    </div > 
-                </div>
-                <div class="clear"></div>
-            </div>                
-        </section>
-
-        <!-- --------------------------------------------------SECTION GRID PRATOS-------------------------------- -->
-        <section class="sec-grid-plates container">            
-            <h1 class="font-zero">Recomendações do Chefe</h1>
-            <div class="box-grid-pratos">
-
-                <?php
-                for ($i = 1; $i <= 8; $i++) {
-                    ?>
-                    <article class="grid-pratos">
-
-                        <div class="thumb-plates">
-                            <img src="img/food-6.jpg" alt="" title="Imagem" />
-                        </div>        
-
-                        <div class="camada-color-plates" title="Sanduíche de bacia">                                   
-                            <a href="#" class="btn-rec-chef" title="Cardápio da Semana" >Recomendação do Chefe</a>
-                            <h1>Sanduíche de bacia<br/> no pão ciabatta</h1>
-                            <p>R$ <span> 10,00</span></p>
-                        </div>
-
-                    </article>                  
-                    <?php
-                }
-                ?>
-                <div class="clear"></div>
-            </div>
-        </section>            
-
-        <!---------------------------------- SECAO RESERVA ------------------------------------>
-        <section class="sec-resevation container">             
-            <header class="desc-resevation">                
-                <h1>Reserva</h1>
-                <p class="tagline">Reserve sua mesa</p>
-                <p>                        
-                    Olá! Primeiramente seja Bem Vindo,
-                    a D'Lurdes agradeçe por sua preferência e para que 
-                    sua reserva seja excelente e confortável, pedimos que preencha
-                    todo o formulário confirmando os dados do campo abaixo. Entraremos 
-                    em contato para confirmar sua reserva, desde já a D'Lurdes deseja uma
-                    ótima refeição.
-                </p>
-            </header>
-
-            <div class="box-form-reservation">
-                <form class="form-reservation">
-                    <label><i class="fa fa-user-circle-o"></i>
-                        <input type="text" class="nome" name="nome" required placeholder="Nome*"/>
-                    </label>
-                    <label><i class="fa fa-envelope-open"></i>
-                        <input type="email" class="email" name="email" placeholder="Email*" required/>
-                    </label>
-                    <label><i class="fa fa-phone"></i>
-                        <input type="tel" class="phone" name="phone" placeholder="Phone*" required/>
-                    </label>
-                    <label><i class="fa fa-calendar"></i>
-                        <input type="date" class="calendar" name="date" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"/>                        
-                    </label>
-
-                    <label>
-                        <i class="fa fa-clock-o"></i>
-                        <select>
-                            <option>horário de funcionamento</option>
-                            <option>11:00 às 14:45</option>
-                            <option>18:00 às 23:30</option>                           
-                        </select>   
-                    </label>
-
-
-                    <label>
-                        <i class="fa fa-users" class="user" ></i>
-                        <input type="number" class="qtd" min="0" max="100" placeholder="Qtd de pessoas">                
-                    </label>
-                    <div class="box-btn-reservation">
-                        <input type="submit" class="btn-fz-reserva" name="btnReserva" value="RESERVAR"/>
-                    </div>
-
-                </form>
-            </div>
-
-            <div class="clear"></div>
-        </section>
-
-        <section class="gallery-restaurant container">
-            <h1 class="font-zero">Galeria</h1>
-            <div class="gallery">
-                <div class="jcarousel-wrapper">
-                    <div class="box-controlslide">
-                        <!-- Prev/next controls -->
-                        <a href="#" class="jcarousel-control-next next"><i class="fa fa-long-arrow-left"></i></a>
-                        <a href="#" class="jcarousel-control-prev prev"><i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                    <!-- Carousel -->
-                    <div class="jcarousel">
-                        <ul>
-                            <?php
-                            for ($i = 1; $i <= 8; $i++) {
-                                ?>                                    
-                                <li class="li-desc-rec">                                           
-                                    <img src="img/restaurant.jpg" alt="Restaurante de D'Lurdes" title="Nosso Restaurante"/>
-                                    <div class="">
-
-                                    </div>
-                                </li>
-                                <?php
-                            }
-                            ?> 
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div> 
-        </section>
-    </main>
-
-    <!----------------------------------------------------------------RODAPÉ--------------------------------------------->        
+    <!------------------------------------ RODAPÉ ------------------------------ -->    
     <footer class="main-footer container">            
         <center>
             <section class="container">
@@ -550,11 +174,11 @@
                     <h1 class="font-zero">Mais Sobre D'Lurdes</h1>
                     <div class="social-footer">                     
                         <ul>
-                            <li><a href="#" title="Facebook" > <i class="fa fa-facebook"></i> </a></li> 
+                            <li><a href="https://www.facebook.com/dlurdesguara/?ref=page_internal" title="Facebook" > <i class="fa fa-facebook"></i> </a></li> 
                             <li><a href="#" title="Twitter" ><i class="fa fa-twitter"></i></a></li> 
-                            <li><a href="#" title="Tripadvisor" ><i class="fa fa-tripadvisor"></i></a></li> 
+                            <li><a href="https://www.tripadvisor.com.br/Restaurant_Review-g2572086-d4784343-Reviews-D_Lurdes-Guara_Federal_District.html" title="Tripadvisor" ><i class="fa fa-tripadvisor"></i></a></li> 
                             <li><a href="#" title="Pinterest" ><i class="fa fa-pinterest"></i></a></li> 
-                            <li><a href="#" title="Instagram" ><i class="fa fa-instagram"></i></a></li> 
+                            <li><a href="https://www.instagram.com/explore/locations/227506531050754/dlurdes-guara/?hl=pt" title="Instagram" ><i class="fa fa-instagram"></i></a></li> 
                         </ul>               
                     </div>
 
@@ -634,7 +258,7 @@
 
                             <div class="box-logo-footer">
                                 <a href="#">                                
-                                    <img src="img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="200px"/>
+                                    <img src="<?= REQUIRE_PATH; ?>/img/logo.png" alt="D'Lurdes" title="D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará." width="200px"/>
                                 </a>
                             </div>
                         </div>
@@ -645,16 +269,22 @@
         </center>
 
         <div class="copy container">
-            <p>&copy <?php echo date('Y'); ?> D'Lurdes - Todos os direitos reservados | <a href="#">Quem faz: Inove Publicidade</a></p>
+            <p>&copy <?php echo date('Y'); ?> D'Lurdes - Todos os direitos reservados |
+                <a href="https://www.inovepublicidade.com/novo" class="quem-faz" target="_blank" title="Inove Publicidade">
+                    QUEM FAZ: INOVE PUBLICIDADE
+                </a>
+            </p>
         </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/scriptSite.js"></script>
-    <script src="js/jcarousel.skeleton.js"></script>
-    <script src="js/jquery.jcarousel.min.js"></script>
-    <script src="js/jcarousel.responsive.js"></script>
-    <script src="js/slider_show.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jquery.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/scriptSite.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.skeleton.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jquery.jcarousel.min.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.responsive.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/slider_show.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.basic.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.responsive-quem.js"></script>
 
 </body>
 </html>

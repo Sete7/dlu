@@ -294,3 +294,4 @@ a{color: #333;text-decoration: none;}
 /*----------------------------------------------COPY ---------------------------*/
 .copy{text-align: center;color: #fff;float: left;padding: 10px;background: #272525;}
 .copy a{color: #fff;}
+.copy p .quem-faz{color: rgba(37,159,171,0.9) !important;}
