@@ -2,25 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 *{margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Open Sans', sans-serif;}
 
-.container{width: 100%;}
-.content{width: 80%;margin: 0 10%;}
-.clear{clear: both;}
-img{width: 100%;}
-ul{list-style: none;}
-a{color: #333;text-decoration: none;}
-.cl-branca{color: #fff;}
-.cl-black{color: #000;}
-.cl-ouro{color: #967a19;}
-.cl-rgba-cinza{color: rgba(0,0,0,0.7);}
-.txt-cente{text-align: center;}
-.txt-left{text-align: left;}
-.txt-right{text-align: right;}
-.txt-just{text-align: justify;}
-.font-zero{font-size: 0;}
-.font-bolder{font-weight: bold;}
-.font-normal{font-weight: normal;}
-.tagline{font-size: 1.1em; color: #967a19;text-transform: uppercase;font-family: 'Cabin', sans-serif; margin-bottom: 2rem;}
-
 /*-------------------------------------------CABEÇALHO---------------------------------*/
 .main-header{z-index: 3;position: absolute; height: auto; }
 .box-social-topo{width: 100%;padding:0.5rem 10%;background: transparent;position: relative;border-bottom: 1px solid rgba(255,255,255,0.3);text-align: left;margin-bottom: 1rem;}
@@ -295,3 +276,20 @@ a{color: #333;text-decoration: none;}
 .copy{text-align: center;color: #fff;float: left;padding: 10px;background: #272525;}
 .copy a{color: #fff;}
 .copy p .quem-faz{color: rgba(37,159,171,0.9) !important;}
+
+
+
+/*---------------------------- QUEM SOMOS ------------------*/
+.main-quem{padding: 0 0 100px 0;}
+.sec-quem-somos{padding: 50px 0 0 0;}
+.header-title{padding: 0 10%;}
+.thumb-quem{position: relative;}
+.box_thumb_quem{width: calc(25% - 20px); margin: 30px 10px;float: left;}
+.social-about{position: absolute; top: 0; width: 100%; height: 98%;padding-top: 70%;}
+.social-about:hover{background: rgba(0,0,0,0.5);color: #fff;}
+.social-about a{display: none;}
+.social-about:hover a{display: inline-block; cursor: pointer;color: #fff;}
+.article-about{width: 60%;margin-right: 2.5%;float: left;}
+.sidebar-right .list-Founding{list-style: circle;}
+.desc-about{font-family: "Open Sans", serif;}
+

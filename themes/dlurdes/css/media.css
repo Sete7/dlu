@@ -25,17 +25,16 @@
     #animation { margin-left: 379px; margin-top: 5px}
     .box-interation .btn-slider { margin-right: 2rem;}
     #animation { margin-left: 555px; margin-top: 20px;}
+    
+    /*----------------QUEM SOMOS--------------*/
+    .article-about{width: 100%;}    
 }
 @media(max-width: 1270px){
     .box-desc-menu .box-btn-black { margin: 2rem 0 2rem 0;}
     .control-one{position: absolute;top: -55px;}
 }
 
-@media(max-width: 1176px){
-    /*----------MENU ------------*/
-    .menu{display: none;}
-    .menu-right {display: none;}
-}
+
 @media(max-width: 1210px){
     .box-social-topo{width: 100%;height: auto;padding: 0;}
     .logo-topo-mob, .box-reserva-topo{display: block;}
@@ -134,6 +133,12 @@
     .sidebarBtn.toggle span:after{top: 24px;transform: rotate(140deg);}
 }
 
+@media(max-width: 1176px){
+    /*----------MENU ------------*/
+    .menu{display: none;}
+    .menu-right {display: none;}
+}
+
 @media(max-width: 1060px){
     .from-city {width: 100%;text-align: center;}
     .div-social{width: 100%;text-align: center;}
@@ -198,6 +203,8 @@
     .time-function .dye {width: calc(50% - 20px);margin: 0.1rem;}
     .box-logo-footer{margin: 3rem 0;}
 
+    /*----------------QUEM SOMOS--------------*/    
+    .box_thumb_quem{width: calc(33.33333333333333% - 20px); margin: 30px 10px;float: left;}
 
 }
 @media(max-width: 800px){
@@ -208,6 +215,9 @@
     .box-pratos {width: 90%; height: auto; margin: 125px 5%;}
     .form-newsletter input {width: 80%;}
     .form-newsletter .btn-news {width: 80%;}
+    
+    /*----------------QUEM SOMOS--------------*/    
+    .box_thumb_quem{width: calc(50% - 20px); margin: 30px 10px;float: left;}
 
 }
 @media(max-width: 768px){
@@ -273,6 +283,9 @@
     .ul-grid-instam li {width: 7rem;} 
     .banner-mobile .mobi-700{display: none;}
     .banner-mobile .mobi-400{display: block;width: 100%;background-size: cover;}
+    
+    /*----------------QUEM SOMOS--------------*/    
+    .box_thumb_quem{width: 100%; margin: 30px 10px;float: left;}
 }
 
 @media(max-width: 360px){

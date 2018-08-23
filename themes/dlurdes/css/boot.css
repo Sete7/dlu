@@ -1,0 +1,66 @@
+.container{width: 100%;}
+.content{width: 80%;margin: 0 10%;}
+.clear{clear: both;}
+img{width: 100%;}
+ul{list-style: none;}
+a{color: #333;text-decoration: none;}
+/*--------------COLOR---------------------*/
+.cl-branca{color: #fff;}
+.cl-black{color: #000;}
+.cl-ouro{color: #967a19;}
+.cl-cinza{color: #9b9b9b;}
+.cl-rgba-cinza{color: rgba(0,0,0,0.7);}
+/*------------ ALINHAMENTO DE FONT ------*/
+.txt-cente{text-align: center;}
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
+.txt-just{text-align: justify;}
+
+/*-------------- FONT-SIZE ---------------*/
+.font-zero{font-size: 0;}
+.ft-sz-zr-seven{font-size: 0.8em;}
+.ft-sz-zr-eght{font-size: 0.8em;}
+.ft-sz-zr-nine{font-size: 0.9em;}
+.ft-sz-zr{font-size: 0.8em;}
+.ft-sz-one{font-size: 1em;}
+.ft-sz-one-fv{font-size: 1.5em;}
+.ft-sz-two{font-size: 2em;}
+.ft-sz-two-fv{font-size: 2.5em;}
+.ft-sz-three{font-size: 3em;}
+.ft-sz-three-fv{font-size: 3.5em;}
+
+/*--------------FONT-WEIGHT---------------*/
+.font-normal{font-weight: normal;}
+.font-bolder{font-weight: bold;}
+.fw{font-weight: 300;}
+.fw-a{font-weight: 400;}
+.fw-b{font-weight: 500;}
+.fw-c{font-weight: 600;}
+
+/*-------------- TAGS ---------------*/
+.conf-h1{font-size: 3.7em;text-transform: uppercase;font-weight: 300;font-family: "Open Sans", serif;}
+.tagline{font-size: 1.1em; color: #967a19;text-transform: uppercase;font-family: 'Cabin', sans-serif; margin-bottom: 2rem;}
+.conf-h2{font-size: 2em;text-transform: uppercase;font-weight: 300;font-family: "Open Sans", serif;}
+.conf-h3{font-size: 1em;text-transform: uppercase;font-weight: 600;font-family: "Open Sans", serif;}
+.conf-p{font-family: "Open Sans", serif;font-weight: 400;color: rgba(0,0,0,0.7);font-size: 0.9em;}
+
+/*------------- MARGIM BOTTOM ---------*/
+.space-mb{margin-bottom: 5px;}
+.space-mb-a{margin-bottom: 20px;}
+.space-mb-b{margin-bottom: 30px;}
+.space-mb-c{margin-bottom: 40px;}
+.space-mb-d{margin-bottom: 50px;}
+.space-mb-e{margin-bottom: 60px;}
+.space-mb-f{margin-bottom: 100px;}
+
+/*-------- ESPACAMENTO INTERNO -------*/
+.pd-forxfor{padding: 10px;}
+.pd-topxbottom{padding: 10px 0;}
+.pd-rightxleft{padding: 0 10px;}
+
+/*--------- CAIXA DE IMAGENS E TEXTO -----*/
+.box{width: 100%;float: left;}
+.box-wt-thumb-fll{width: 100%; margin: 30px 10px;float: left;}
+.box-wt-thumb-md{width: calc(50% - 20px); margin: 30px 10px;float: left;}
+.box-wt-thumb-sv{width: calc(33.33333333333333% - 20px); margin: 30px 10px;float: left;}
+.box-wt-thumb-bx{width: calc(25% - 20px); margin: 30px 10px;float: left;}

@@ -12,14 +12,15 @@ require_once './app/config.php';
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link href="<?= REQUIRE_PATH; ?>/css/boot.css" rel="stylesheet" type="text/css"/>
         <link href="<?= REQUIRE_PATH; ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="<?= REQUIRE_PATH; ?>/css/estilo.css" rel="stylesheet" type="text/css"/>
         <link href="<?= REQUIRE_PATH; ?>/css/jcarousel.skeleton.css" rel="stylesheet" type="text/css"/>
         <link href="<?= REQUIRE_PATH; ?>/css/media.css" rel="stylesheet" type="text/css"/>        
-        <script type="text/javascript" src="<?= REQUIRE_PATH; ?>/jcarousel.basic.js"></script>
+
     </head>
     <body>
-        <!--http://tamarind.imaginem.co-->
+        <!-- http://tamarind.imaginem.co -->
         <!--------------------------------------------------------CABECALHO-------------------------->
     <center>
         <header class="main-header container">
@@ -152,18 +153,18 @@ require_once './app/config.php';
             <div class="clear"></div>
         </header>
     </center>
-    
+
     <!-- --------------------------------- CONTEUDO ---------------------------- -->
-            <?php
-            $Url[1] = (empty($Url[1]) ? null : $Url[1]);
-            if (file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')):
-                require REQUIRE_PATH . '/' . $Url[0] . '.php';
-            elseif (file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')):
-                require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php';
-            else:
-                require REQUIRE_PATH . '/404.php';
-            endif;
-            ?>
+    <?php
+    $Url[1] = (empty($Url[1]) ? null : $Url[1]);
+    if (file_exists(REQUIRE_PATH . '/' . $Url[0] . '.php')):
+        require REQUIRE_PATH . '/' . $Url[0] . '.php';
+    elseif (file_exists(REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php')):
+        require REQUIRE_PATH . '/' . $Url[0] . '/' . $Url[1] . '.php';
+    else:
+        require REQUIRE_PATH . '/404.php';
+    endif;
+    ?>
     <!-- --------------------------------- CONTEUDO ---------------------------- -->       
 
     <!------------------------------------ RODAPÉ ------------------------------ -->    
@@ -283,8 +284,6 @@ require_once './app/config.php';
     <script src="<?= REQUIRE_PATH; ?>/js/jquery.jcarousel.min.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.responsive.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/slider_show.js"></script>
-    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.basic.js"></script>
-    <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.responsive-quem.js"></script>
 
 </body>
 </html>
