@@ -46,7 +46,7 @@
     .social-header .from-city, .div-social{display: none;}
     .box-logo{position: relative;top: 25px;}
     /*-----------logo-------------*/
-    .box-logo {width: 10rem; height: 10rem;margin: -5% 40%;}
+    .box-logo {width: 10rem; height: 10rem;margin: -5% 40%;display: none;}
     /*----------MENU ------------*/
     .menu li {display: none;}
     .menu-right li {display: none;}    
@@ -284,8 +284,12 @@
     .banner-mobile .mobi-700{display: none;}
     .banner-mobile .mobi-400{display: block;width: 100%;background-size: cover;}
     
-    /*----------------QUEM SOMOS--------------*/    
-    .box_thumb_quem{width: 100%; margin: 30px 10px;float: left;}
+    /*----------------QUEM SOMOS--------------*/  
+    .social-about a{display: inline-block;color: #fff;position: relative;}
+    .conf-h2{text-align: center;}
+    .box_thumb_quem{width: 100%; margin: 30px 10px;float: left;}    
+    .thumb-quem-top-a{display: none;}
+    .thumb-quem-top{display: block;}
 }
 
 @media(max-width: 360px){

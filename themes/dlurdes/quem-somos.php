@@ -1,5 +1,7 @@
 <div class="banner-fundo-quem">
-    <img src="<?= REQUIRE_PATH; ?>/img/fundo-quem2.jpg" alt=""/>
+    <img class="thumb-quem-top-a" src="<?= REQUIRE_PATH; ?>/img/fundo-quem2.jpg" alt=""/>
+    <img class="thumb-quem-top" src="<?= REQUIRE_PATH; ?>/img/banner-mob-top-quem-320.jpg" alt=""/>
+    <div class="clear"></div>
 </div>
 
 <main class="main-quem container">
@@ -51,13 +53,11 @@
                     <li class="space-mb-b">
                         <div>
                             <span class="cl-cinza fw-c">2018</span>                    
-                            <h3 class="conf-h3 space-mb">FOUNDING OF COMPANY</h3>                       
+                            <h3 class="conf-h3 space-mb">FUNDAÇÃO DA COMPANHIA</h3>                       
                             <p class="conf-p txt-just">
-                                I am so happy, my dear friend, so absorbed in the
-                                exquisite sense of mere tranquil existence, that I
-                                neglect my talents. I should be incapable of drawing
-                                a single stroke at the present moment; and yet I feel
-                                that I never was a greater artist than now.
+                                Lorem Ipsum é simplesmente uma simulação de texto da
+                                indústria tipográfica e de impressos, e vem sendo utilizado
+                                desde o século XVI, quando um impressor desconhecido pegou
                                 2011
                             </p>
                         </div>
@@ -71,8 +71,12 @@
 
         <section class="sec-user box">
             <div class="header-user txt-cente space-mb-e">
-                <h1 class="conf-h1 space-bottom-a"> Meet the Team</h1>
-                <p class="conf-p space-bottom-d">When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.</p>
+                <h1 class="conf-h1 space-bottom-a"> Lorem Ipsum</h1>
+                <p class="conf-p space-bottom-d">
+                    Lorem Ipsum é simplesmente uma simulação de texto da
+                    indústria tipográfica e de impressos, e vem sendo utilizado
+                    desde o século XVI, quando um impressor desconhecido pegou
+                </p>
             </div>
 
             <div class="box-thum-about box">
@@ -83,19 +87,18 @@
                         <div class="thumb-quem">
                             <img src="<?= REQUIRE_PATH; ?>/img/staff-1-770x770.jpg" alt=""/>
                             <div class="social-about">
-                                <a href="#"><i class="fa fa-facebook-square"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" title="Tripadvisor"><i class="fa fa-tripadvisor"></i></a>
                             </div>     
                         </div> 
 
                         <div class="desc-about txt-cente">
-                            <h1 class="ft-sz-one-fv fw-c">Manager</h1>
-                            <h2 class="ft-sz-one fw-a">JANE DOE</h1>
-                                <p class="conf-p">
-
-                                    At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun
-                                </p>    
+                            <h1 class="ft-sz-one-fv fw-c">Chefe</h1>
+                            <h2 class="ft-sz-one fw-a">Meire</h2>
+                            <p class="conf-p">
+                                Lorem Ipsum é simplesmente uma simulação de texto da
+                            </p>    
                         </div>    
                     </div>    
                     <?php
