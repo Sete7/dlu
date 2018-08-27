@@ -32,7 +32,10 @@
 @media(max-width: 1270px){
     .box-desc-menu .box-btn-black { margin: 2rem 0 2rem 0;}
     .control-one{position: absolute;top: -55px;}
+    /*------------- CARDAPIO ------------*/
+    .packages .header-title { padding: 0;}
 }
+@media(max-width: 1241px){.box-desc-plates .btn-black{padding: 0.3rem 3rem;}}
 
 
 @media(max-width: 1210px){
@@ -156,6 +159,9 @@
 
     .lista-pratos .box-list-prato .box-desc-prato h1 {width: 100%;}
     .box-pratos { width: 80%;height: auto; margin: 125px 10%;}
+    
+    .thumb-cad{width: calc(33.33333333333333% - 20px);}
+    .box-our-serv{width: calc(33.33333333333333% - 20px);}
 }
 @media(max-width: 1024px){
     .box-logo { margin: -3% 54%;}
@@ -165,8 +171,8 @@
     .control-three{position: relative; top: -60px;}
 }
 
-@media(max-width: 1000px){
-
+@media(max-width: 1010px){
+    .box-desc-plates .btn-black { padding: 0.3rem 1rem;}
 }
 
 @media(max-width: 970px){
@@ -174,6 +180,8 @@
     /*    .menu{display: none;}
         .menu-right {display: none;}*/
     .box-interation{display: none;}
+    /*------------------------CARDÁPIO----------------*/
+    .box-plates {width: calc(50% - 50px); margin: 40px 25px;}
 
 }
 @media(max-width: 900px){
@@ -218,6 +226,10 @@
     
     /*----------------QUEM SOMOS--------------*/    
     .box_thumb_quem{width: calc(50% - 20px); margin: 30px 10px;float: left;}
+    
+    /*---------------- CARDÁPIO --------------*/ 
+    .thumb-cad{width: calc(50% - 50px); margin: 40px 25px;}
+    .box-our-serv{width: calc(50% - 50px); margin: 40px 25px;}
 
 }
 @media(max-width: 768px){
@@ -228,10 +240,13 @@
     .grid-pratos {width: calc(50% - 20px);}
     .banner-mobile{display: block;position: relative;}
     .banner-mobile img{margin: 0;padding: 0;position: relative;}
-    .slider{display: none;}  
+    .main_content{display: none;}  
     .banner-mobile .mirros-color{position: absolute;top: 0;width: 100%;height: 100%;float: left;background: rgba(0,0,0,0.2);z-index: 2;}
     .banner-mobile{display: block;position: relative;}  
     .mobi-400{display: none;}
+    
+     /*------------------------CARDÁPIO----------------*/
+    .box-plates {width: calc(100% - 50px); margin: 40px 25px;}
 }
 @media(max-width: 650px){
     .sec-post h1 {font-size: 2em;}  
@@ -262,6 +277,9 @@
     .lista-pratos .box-list-prato .box-desc-prato .text-title-1 .price {position: relative;}
     .grid-pratos .camada-color-plates  h1{display: block;position: absolute;bottom: 50px;}
     .grid-pratos .camada-color-plates p{display: block;position: absolute;bottom: 20px;}
+     /*---------------- CARDÁPIO --------------*/ 
+    .thumb-cad{width: 100%; margin: 40px 0;}
+    .box-our-serv{width: 100%; margin: 40px 0;}
 }
 @media(max-width: 450px){
     .box-logo{position: relative;margin: 20% 0;    left: 10px;}
@@ -283,6 +301,10 @@
     .ul-grid-instam li {width: 7rem;} 
     .banner-mobile .mobi-700{display: none;}
     .banner-mobile .mobi-400{display: block;width: 100%;background-size: cover;}
+    
+    .main-cardapio .conf-h1 {font-size: 2em;}
+    .art-cardapio .btn-black {padding: 0.3rem 2rem;}
+    .box-plates {width: 100%; margin: 40px 0;}
     
     /*----------------QUEM SOMOS--------------*/  
     .social-about a{display: inline-block;color: #fff;position: relative;}

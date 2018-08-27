@@ -54,7 +54,7 @@ a{color: #333;text-decoration: none;}
 .space-mb-f{margin-bottom: 100px;}
 
 /*-------- ESPACAMENTO INTERNO -------*/
-.pd-forxfor{padding: 10px;}
+.pd-forxfor{padding: 10px;float: left}
 .pd-topxbottom{padding: 10px 0;}
 .pd-rightxleft{padding: 0 10px;}
 
@@ -72,5 +72,5 @@ a{color: #333;text-decoration: none;}
 .radios-c{border-radius: 30px;}
 
 .btn-whine{padding: 0.5rem 5rem;font-weight: bold;border: 1px solid #fff;color: #fff; background: transparent;}
-.btn-black{padding: 0.5rem 5rem;font-weight: bold;border: 1px solid #000;color: #000; background: transparent;}
+.btn-black{padding: 0.3rem 5rem;font-weight: normal;border: 1px solid #000;color: #000; background: transparent;}
 .btn-black:hover{border: 1px solid #000;color: #fff; background: #000;}
