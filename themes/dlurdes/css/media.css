@@ -35,7 +35,10 @@
     /*------------- CARDAPIO ------------*/
     .packages .header-title { padding: 0;}
 }
-@media(max-width: 1241px){.box-desc-plates .btn-black{padding: 0.3rem 3rem;}}
+@media(max-width: 1241px){
+    .box-desc-plates .btn-black{padding: 0.3rem 3rem;}
+    .art-single-blg{width: 50%;}
+}
 
 
 @media(max-width: 1210px){
@@ -60,6 +63,9 @@
     .box-varieti .desc-varieti p { margin: 0.5rem 4rem;}
     .li-desc-rec .box-desc-rec .sec-title h2 {font-size: 1.2em; font-weight: 400;margin: 0;}
     .li-desc-rec .box-desc-rec .sec-title .txt-rec {font-size: 0.9em; margin-bottom: 1rem;}
+    .form-artc input{width: 100%;}
+    .form-artc .email{margin: 20px 0;}
+    .form-artc .btn-coments{max-width: 10rem;}
 }
 
 @media(max-width: 1209px){
@@ -173,6 +179,8 @@
 
 @media(max-width: 1010px){
     .box-desc-plates .btn-black { padding: 0.3rem 1rem;}
+    .art-single-blg{width: 100%;}
+    .sidebar-article{width: 100%;margin-left: 0;}
 }
 
 @media(max-width: 970px){
@@ -182,6 +190,7 @@
     .box-interation{display: none;}
     /*------------------------CARDÁPIO----------------*/
     .box-plates {width: calc(50% - 50px); margin: 40px 25px;}
+ 
 
 }
 @media(max-width: 900px){
@@ -213,6 +222,9 @@
 
     /*----------------QUEM SOMOS--------------*/    
     .box_thumb_quem{width: calc(33.33333333333333% - 20px); margin: 30px 10px;float: left;}
+    
+    /*------------------------BLOG-----------*/
+    .box-thum-blog{float: left;width: calc(50% - 20px);margin: 40px 10px;}
 
 }
 @media(max-width: 800px){
@@ -272,6 +284,9 @@
     .time-function h1 {font-size: 1.3em;}
     .time-function .dye { width: calc(100% - 20px); margin: 2rem 10px;}
     .box-logo-footer { margin: 0.5rem 0;}
+    
+    .sec-artigo .header-title h1{font-size: 2em;}
+    .desc-article .conf-h2{font-size: 2em;}
 }
 @media(max-width: 560px){
     .lista-pratos .box-list-prato .box-desc-prato .text-title-1 .price {position: relative;}
@@ -280,6 +295,13 @@
      /*---------------- CARDÁPIO --------------*/ 
     .thumb-cad{width: 100%; margin: 40px 0;}
     .box-our-serv{width: 100%; margin: 40px 0;}
+    
+    /*--------------------BLOG----------------*/
+    .sec-blog .conf-h1{font-size: 2em;}
+    .box-thum-blog{float: left;width: 100%;margin: 40px 0;}
+    
+    .reply-user{padding-left: 2rem;}
+    
 }
 @media(max-width: 450px){
     .box-logo{position: relative;margin: 20% 0;    left: 10px;}

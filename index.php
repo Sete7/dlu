@@ -86,11 +86,12 @@ require_once './app/config.php';
                         <li>
                             <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                         </li>
-                        <li>
-                            <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
-                        </li>
+                       
                         <li>
                             <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
+                        </li>                        
+                         <li>
+                            <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                         </li>
                         <li>
                             <a href="<?= HOME; ?>/reserva" title="Reserva">
@@ -132,10 +133,10 @@ require_once './app/config.php';
                                 <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                             </li>
                             <li>
-                                <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
-                            </li>
-                            <li>
                                 <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
+                            </li>
+                             <li>
+                                <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                             </li>
                             <li>
                                 <div class="reserva btn">

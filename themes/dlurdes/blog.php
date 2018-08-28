@@ -28,7 +28,7 @@
             for ($i = 1; $i <= 12; $i++):
                 ?>
                 <div class="box-thum-blog">
-                    <a href="#">
+                    <a href="<?= HOME; ?>/single-blog">
                         <div class="thumb-blog">
                             <img src="<?= REQUIRE_PATH; ?>/img/our-staff-image.jpg" alt=""/>
                             <div class="layer-blog" title="Artigo do Blog">
@@ -42,7 +42,7 @@
                         <p class="space-mb-b">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper leo eget sapien ultrices...
                         </p>
-                        <a href="#" class="next-article" title="Continuar lendo" >Continue lendo <i class="fa fa-arrow-circle-o-right"></i></a>
+                        <a href="<?= HOME; ?>/single-blog" class="next-article" title="Continuar lendo" >Continue lendo <i class="fa fa-arrow-circle-o-right"></i></a>
                     </div>
 
                 </div>
