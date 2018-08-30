@@ -311,7 +311,20 @@
 .thumb-icon-serv{text-align: center;}
 .box-btn-black{width: 100%;float: left;margin: 50px 0 100px 0;}
 .desc-our-serv a:hover{color: red;}
-
+/*---------------------------- SINGLE CARDAPIO ------------------*/
+.art-single-cad{padding: 50px 0;}
+.thumb-singlo-cad{width: 45%;float: left;margin-right: 2rem;}
+.box-thumb-on{width: 100%;float: left;}
+.box-thumb-on img{width: 16%;}
+.desc-singlo-cad p{line-height: 1.6;}
+.desc-singlo-cad .cifrao{position: relative;top: -8px;font-size: 2rem;}
+.art-lunch{float: left;}
+.a-thumb-lunch{width: calc(16.66666666666667% - 20px);margin: 40px 10px;float: left;}
+.thumb-lunch{position: relative;}
+.desc-thumb-lunch{position: absolute;top: 0;width: 100%;height: 83%;border-radius: 6px;}
+.desc-thumb-lunch:hover{background: rgba(0,0,0,0.3);}
+.desc-thumb-lunch h1{color: #fff;padding-top: 25%;text-align: center;}
+.btn-lunch{padding: 0.2rem 1.3rem;color: #000;background: rgba(255,255,255,0.5);border: 1px solid #fff;font-size: 1em;}
 /*---------------------------PACKAGES CARDÁPIO -------------------*/
 .main-cardapio{padding: 80px 0 100px 0;float: left;}
 .packages{padding: 100px 0;}
@@ -335,7 +348,7 @@
 .next-article:hover{color: #ff0000;}
 
 /*----------------------SINGLE BLOG ----------------------------*/
-.bg-single-blog{width: 100%;height: 300px;background: #333;}
+.bg-single-top{width: 100%;height: 300px;background: #333;}
 .main-single-blog{float: left;}
 
 .art-single-blg{width: 60%;float: left;margin-right: 1rem;}
@@ -363,5 +376,7 @@
 .title-sidebar:hover{color: #967a19;text-decoration: underline;}
 
 /*-----------------------------------CONTATO --------------------------*/
-.main_contato{float: left;}
-.map-google{float: left;}
+.main_contato{float: left;padding-top: 50px;}
+
+/*----------------------RECEITA SINGLE ----------------------*/
+.main-single-receita{padding: 100px 0;}

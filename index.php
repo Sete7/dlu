@@ -86,11 +86,11 @@ require_once './app/config.php';
                         <li>
                             <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                         </li>
-                       
+
                         <li>
-                            <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
+                            <a href="<?= HOME; ?>/evento" title="Eventos">Eventos</a>
                         </li>                        
-                         <li>
+                        <li>
                             <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                         </li>
                         <li>
@@ -133,9 +133,9 @@ require_once './app/config.php';
                                 <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                             </li>
                             <li>
-                                <a href="<?= HOME; ?>/eventos" title="Eventos">Eventos</a>
+                                <a href="<?= HOME; ?>/evento" title="Eventos">Eventos</a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
                             </li>
                             <li>
@@ -279,12 +279,15 @@ require_once './app/config.php';
         </div>
     </footer>
 
+    <script src="<?= REQUIRE_PATH; ?>/js/jquery-3.2.1.min.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/jquery.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/scriptSite.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.skeleton.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/jquery.jcarousel.min.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/jcarousel.responsive.js"></script>
     <script src="<?= REQUIRE_PATH; ?>/js/slider_show.js"></script>
+    <script src="<?= REQUIRE_PATH; ?>/js/onmousethumb_pdt.js"></script>
+    
 
 </body>
 </html>

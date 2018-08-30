@@ -1,13 +1,13 @@
 <div class="bg-single-top">
 
 </div>
-<main class="main-single-blog container">
+<main class="main-single-receita container">
     <section class="sec-artigo">       
 
         <div class="header-title txt-cente content">
-            <h1 class="conf-h1 space-mb-a">Artigo</h1>
+            <h1 class="conf-h1 space-mb-a">Receita Mineira</h1>
             <p class="tagline cl-rgba-cinza space-bottom-d">
-                D'Lurdes Dicas & informações.
+                D'Lurdes Receitas.
             </p>
             <div class="clear"></div>
         </div> 
@@ -15,13 +15,14 @@
         <div class="content">
             <!--------------    ARTIGO   --------------->
             <article class="art-single-blg">
-                <h1 class="font-zero">Artigo do Post Blog</h1>
+                <h1 class="font-zero">Artigo de Receitas</h1>
                 <div class="thumb-article">
-                    <img src="<?= REQUIRE_PATH; ?>/img/image-drop-2.jpg" alt=""/>
+                    <img src="<?= REQUIRE_PATH; ?>/img/bf-cv.jpg" alt="BIFE A CAVALO" title="BIFE A CAVALO"/>
                     <div class="desc-article txt-just">
                         <span class="ft-sz-zr-eght"><i class="fa fa-clock-o"></i> AGOSTO 27/2018</span>
 
-                        <h2 class="conf-h2 space-mb">Lorem ipsum dolor sit amet, consectetur</h2>
+                        <h2 class="conf-h2 space-mb">Bife de Panela</h2>
+                        <h3>Igredientes</h3>
                         <p class="conf-p space-mb-b">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper leo eget sapien
                             ultrices vitae facilisis massa dictum. Fusce eu purus a urna accumsan luctus. Nullam sit
@@ -30,15 +31,7 @@
                             Suspendisse molestie facilisis dui, et rutrum enim fermentum id.
                         </p>
 
-                        <strong class="st-featured space-mb-b pd-forxfor">
-                            <p class="ft-sz-one-fv">
-                                Ut eros ac sit amet justo. Ut molestie orci lobortis nisl
-                                convallis volutpat. Pellentesque interdum sagittis tortor vitae tempus. Mauris
-                                imperdiet sapien non elit fermentum pulvinar. Vivamus sagittis egestas semper.
-                            </p>
-                        </strong>
-
-                        <h2>Cras ultrices iaculis</h2>
+                        <h3>Duração</h3>
                         <p class="space-mb-a">
                             Fusce ultricies dolor a eros dignissim at vulputate magna aliquet. Cras porttitor
                             dapibus dictum. Pellentesque scelerisque euismod eleifend. Duis aliquam tincidunt mi,
@@ -48,7 +41,7 @@
                             Phasellus venenatis
                         </p>
 
-                        <h2> Phasellus tristique sapien ut dui sagittis</h2>
+                        <h3> Modo de Preparo</h3>
 
                         <p class="space-mb-a">
                             In congue rhoncus laoreet. Quisque metus purus, blandit nec pellentesque ut,
@@ -127,20 +120,20 @@
 
             <!--------------SIDEBAR ARTIGO--------------->
             <aside class="sidebar-article">
-                <h1 class="font-zero">Ultimas informações do Site</h1>
+                <h1 class="font-zero">Ultimas receitas do Site</h1>
                 <form class="for-search box space-mb-b" method="">                    
                     <input class="inp-search" type="text" name="search">                    
                     <button class="btn-search"><i class="fa fa-search"></i></button>
                 </form>
-                <h2 class="conf-h2 box space-mb">Eventos</h2>
+                <h2 class="conf-h2 box space-mb">Ultimas Receitas</h2>
                 <div class="box space-mb-b">  
                     <?php
                         for($i=1;$i<=5;$i++):                      
                     ?>
-                    <a href="#"  class="box-sidebar-artc space-mb-a">
-                        <img src="<?= REQUIRE_PATH; ?>/img/thumb-artc.jpg" alt=""/>
+                    <a href="<?= HOME; ?>/single-receita"  class="box-sidebar-artc space-mb-a">
+                        <img src="<?= REQUIRE_PATH; ?>/img/bf-cv.jpg" alt="BIFE A CAVALO" title="BIFE A CAVALO"/>
                         <h3 class="title-sidebar">
-                            Vestibulum ipsum urna
+                            Carne de Bife
                         </h3>
                         <p class="conf-p">
                             Loren consequat vel cursus ut, scelerisque vel nisl.
@@ -151,15 +144,15 @@
                     ?>
                 </div>
                 
-                <h2 class="conf-h2 box space-mb">Post Populares</h2>
+                <h2 class="conf-h2 box space-mb">Pratos da Semana</h2>
                 <div class="box">  
                     <?php
                         for($i=1;$i<=5;$i++):                      
                     ?>
-                    <a href="#"  class="box-sidebar-artc space-mb-a">
-                        <img src="<?= REQUIRE_PATH; ?>/img/thumb-artc.jpg" alt=""/>
+                    <a href="<?= HOME; ?>/cardapio"  class="box-sidebar-artc space-mb-a">
+                        <img src="<?= REQUIRE_PATH; ?>/img/bf-cv.jpg" alt="BIFE A CAVALO" title="BIFE A CAVALO"/>
                         <h3 class="title-sidebar">
-                            Vestibulum ipsum urna
+                            Feijão Tropeiro
                         </h3>
                         <p class="conf-p">
                             Loren consequat vel cursus ut, scelerisque vel nisl.

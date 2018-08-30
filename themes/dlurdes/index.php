@@ -117,7 +117,7 @@
             </p>
 
             <div class="box-btn-reservar">
-                <a href="#" class="btn-reservar-two" >SAIBA MAIS</a>
+                <a href="<?= HOME; ?>/quem-somos" class="btn-reservar-two" >SAIBA MAIS</a>
             </div>  
         </div>           
         <div class="clear"></div>
@@ -137,7 +137,8 @@
                 para vc se deliciar da nossa culinária.
             </p>
             <div class="box-btn-black">
-                <a href="#" class="btn-white">
+                <!-------------REDIRECIONA PARA GERAL SOBREMESA --------------->
+                <a href="<?= HOME; ?>/single-categoria" class="btn-white">
                     Veja Mais
                 </a>
             </div>
@@ -166,7 +167,8 @@
                 </p>
 
                 <div class="box-btn-veja">
-                    <a href="#" class="btn-veja">
+                    <!------------------------------ REDIRECIONA PARA SINGLE CATEGORIA ------------------>
+                    <a href="<?= HOME; ?>/single-categoria" class="btn-veja">
                         Veja Mais
                     </a>
                 </div>
@@ -221,7 +223,7 @@
                                             </p>
                                         </div>
                                         <div class="box-btn-rec">
-                                            <a href="#" class="btn-rec">
+                                            <a href="<?= HOME; ?>/receitas" class="btn-rec">
                                                 Veja Mais
                                             </a>
                                         </div>
@@ -255,12 +257,12 @@
                 for ($i = 1; $i <= 7; $i++) {
                     ?>
                     <article class="box-list-prato">
-                        <a class="box-thumb-list"  href="#">                                                 
+                        <a class="box-thumb-list"  href="<?= HOME; ?>/single-categoria">                                                 
                             <img src="<?= REQUIRE_PATH; ?>/img/pizza.jpg"  alt="RECOMENDAÇÃO DO CHEFE" title="PIZZA PORTUGUESA "/>
 
                         </a>
                         <div class="box-desc-prato">
-                            <h1><a href="#">RECOMENDAÇÃO DO CHEFE</a></h1>
+                            <h1><a href="<?= HOME; ?>/single-categoria">RECOMENDAÇÃO DO CHEFE</a></h1>
                             <h2 class="text-title-1"> PIZZA PORTUGUESA <span>Segunda-feira, 01/09/2018</span> <span class="price">R$30.95</span></h2>
                             <p class="text-title-2">
                                 Presunto, ovos cozidos, cebola e azeitonas pretas...
@@ -271,7 +273,7 @@
                 }
                 ?>
                 <div class="box-lt-receitas">
-                    <a class="btn-lt-receitas" href=""> VEJA MAIS</a>
+                    <a class="btn-lt-receitas" href="<?= HOME; ?>/single-categoria"> VEJA MAIS</a>
                 </div > 
             </div>
             <div class="clear"></div>
@@ -293,7 +295,7 @@
                     </div>        
 
                     <div class="camada-color-plates" title="Sanduíche de bacia">                                   
-                        <a href="#" class="btn-rec-chef" title="Cardápio da Semana" >Recomendação do Chefe</a>
+                        <a href="<?= HOME; ?>/cardapio" class="btn-rec-chef" title="Cardápio da Semana" >Recomendação do Chefe</a>
                         <h1>Sanduíche de bacia<br/> no pão ciabatta</h1>
                         <p>R$ <span> 10,00</span></p>
                     </div>

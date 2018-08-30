@@ -25,15 +25,17 @@
 
         <article class="art-cardapio container txt-cente">
             <h1 class="space-mb-b">Os melhores pratos só na D'Lurdes</h1>
-            <div class="content">      
+            <div class="content">   
+                <h2 class="txt-left">CARDÁPIO PARA O ALMOÇO</h2>
                 <?php
-                for ($i = 1; $i <= 12; $i++):
+                for ($i = 1; $i <= 7; $i++):
                     ?>
                     <div class="thumb-cad">            
-                        <a href="#">            
+                        <a href="<?= HOME; ?>/single-cardapio">            
                             <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
 
                             <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <span>Segunda-feira, <?= date("d/m/Y, H:s"); ?> </span>
                                 <h2 class="ft-sz-one-fv fw-c">Prato Tradicional</h2>
                                 <p class="ft-sz-one fw-a">Carne de Bife</p>
                                 <p class="ft-sz-one-fv">
@@ -46,7 +48,66 @@
                 endfor;
                 ?>
                 <div class="box-btn-black">
-                    <a href="#" class="btn-black ft-sz-two">Veja Mais</a>
+                    <a href="<?= HOME; ?>/single-categoria" class="btn-black ft-sz-two">Veja Mais</a>
+                </div>     
+            </div>
+            <div class="clear"></div>  
+        </article>
+
+        <article class="art-cardapio container txt-cente">        
+            <div class="content">   
+                <h2 class="txt-left">CARDÁPIO PARA O JANTAR</h2>
+                <?php
+                for ($i = 1; $i <= 7; $i++):
+                    ?>
+                    <div class="thumb-cad">            
+                        <a href="<?= HOME; ?>/single-cardapio"> 
+                            <img  class="radios-a"  src="<?= REQUIRE_PATH; ?>/img/food-6.jpg" alt="" title="Imagem" />
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <span>Segunda-feira, <?= date("d/m/Y, H:s"); ?></span>
+                                <h2 class="ft-sz-one-fv fw-c">Prato Tradicional</h2>
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                                <p class="ft-sz-one-fv">
+                                    <span> R$ </span> 12.00
+                                </p> 
+                            </div>
+                        </a>
+                    </div>  
+                    <?php
+                endfor;
+                ?>
+                <div class="box-btn-black">
+                    <a href="<?= HOME; ?>/single-categoria" class="btn-black ft-sz-two">Veja Mais</a>
+                </div>     
+            </div>
+            <div class="clear"></div>  
+        </article>
+
+        <article class="art-cardapio container txt-cente">        
+            <div class="content">   
+                <h2 class="txt-left">RODÍZIO DE PIZZA</h2>
+                <?php
+                for ($i = 1; $i <= 8; $i++):
+                    ?>
+                    <div class="thumb-cad">            
+                        <a href="<?= HOME; ?>/single-cardapio">            
+                            <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/pizza.jpg"  alt="RECOMENDAÇÃO DO CHEFE" title="PIZZA PORTUGUESA "/>
+
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <span><?= date("d/m/Y, H:s"); ?></span>
+                                <h2 class="ft-sz-one-fv fw-c">Prato Tradicional</h2>
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                                <p class="ft-sz-one-fv">
+                                    <span> R$ </span> 12.00
+                                </p> 
+                            </div>
+                        </a>
+                    </div>  
+                    <?php
+                endfor;
+                ?>
+                <div class="box-btn-black">
+                    <a href="<?= HOME; ?>/single-categoria" class="btn-black ft-sz-two">Veja Mais</a>
                 </div>     
             </div>
             <div class="clear"></div>  
@@ -114,7 +175,7 @@
                                     da melhor pizza de Brasília a
                                     semana toda.
                                 </p>
-                                <a href="#" class="btn-black">VEJA MAIS</a>
+                                <a href="<?= HOME; ?>/single-categoria" class="btn-black">VEJA MAIS</a>
                             </div>
                         </div>
 
@@ -131,7 +192,7 @@
                                     dapibus posuere velit aliquet. Cras mattis
                                     consectetur purus sit amet fermentum.
                                 </p>
-                                <a href="#" class="btn-black">VEJA MAIS</a>
+                                <a href="<?= HOME; ?>/single-categoria" class="btn-black">VEJA MAIS</a>
                             </div>
                         </div>
 
@@ -148,7 +209,7 @@
                                     dapibus posuere velit aliquet. Cras mattis
                                     consectetur purus sit amet fermentum.
                                 </p>
-                                <a href="#" class="btn-black">VEJA MAIS</a>
+                                <a href="<?= HOME; ?>/single-categoria" class="btn-black">VEJA MAIS</a>
                             </div>
                         </div>
                     </div>
