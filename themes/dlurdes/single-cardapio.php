@@ -20,11 +20,11 @@
                 </div>
             </div>
             <div class="desc-singlo-cad">                                
-                <h2 class="space-mb-a"> Artist’s description</h2>
+                <h2 class="space-mb-a">Lorem Ipsum é simplesmente</h2>
                 <p class="space-mb-a txt-just">
-                    Integer dapibus turpis pulvinar nunc porttitor, sed auctor libero posuere.
-                    Fusce nisi nunc, porta egestas venenatis ut, sodales a purus. Pellentesque
-                    adipiscing enim massa, nec vulputate ante vehicula et. Quisque malesuada feugiat augue a ullamcorper.
+                    É um fato conhecido de todos que um leitor se distrairá com o conteúdo
+                    de texto legível de uma página quando estiver examinando sua diagramação.
+                    A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras.
                 </p>
                 <p> <span class="cifrao"> R$ </span> <strong class="ft-sz-three-fv fw-b">12.00</strong></p>
             </div>
