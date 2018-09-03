@@ -53,27 +53,27 @@
             <div class="clear"></div>
         </article>
         <!------------------------------ FORMULÁRIO DE PREENCHIMENTO PARA CONTATO ------------------>
-        <article class="content">
-            <h1 class="txt-cente ft-sz-two fw-b">Deixe a sua mensagem, elogio ou reclamação que em breve retornaremos.</h1>
+        <article class="art-form-contact content">
+            <h1 class="txt-cente ">Deixe a sua mensagem, elogio ou reclamação que em breve retornaremos.</h1>
 
             <div class="box-form box">
                 <form class="form-contact" method="POST">
-
-                    <input type="text" id="nome" name="nome" placeholder="Nome*" required="" /><br/>
-
-                    <div class="block-input">
-                        <input type="tel" id="email" name="email" placeholder="Email*" required="" />
-                        <input type="tel" id="phone" name="phone"  placeholder="Telefone*" required="" />
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" placeholder="Nome*" required="" /><br/>
                     </div>
-
-                    <input type="assunto" id="assunto" name="assunto" required="" /><br/>
-
-                    <div class="">                        
+                    <div class="form-group">
+                        <input type="tel"  name="email" class="email" placeholder="Email*" required="" />
+                        <input type="tel"  name="phone" class="phone" placeholder="Telefone*" required="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="assunto" id="assunto" name="assunto" placeholder="Assunto*" required="" /><br/>
+                    </div>
+                    <div class="form-group">                        
                         <textarea cols="100" rows="5" name="msg" placeholder="Mensagem*"></textarea><br/>
                     </div>
 
-                    <div class="btn-sub-contact">
-                        <input type="submit" value="Enviar"/>                    
+                    <div class="form-group">
+                        <input type="submit" class="btnContact" value="Enviar"/>                    
                     </div>
                 </form>
             </div>

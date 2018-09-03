@@ -381,10 +381,17 @@
 .block-contact i{font-size: 3rem;color: #333;margin-bottom: 0.5rem;}
 .block-contact h2{margin-bottom: 0.5rem;}
 .block-contact p{font-family: 'Cabin', sans-serif;}
-.form-contact{position: relative;}
-.form-contact input{width: 45%;height: 2.5rem;outline: none;border: 1px solid #cecece;margin: 0.5 5% 0.5 0;float: left;}
-.block-input{width: 45%;float: left;}
-.block-input input{width: 20%;height: 2.5rem;outline: none;border: 1px solid #cecece;margin: 0;float: left;}
-.form-contact .msg{width: 45%;height: 6rem;outline: none;border: 1px solid #cecece;margin-left: 5%;}
+.art-form-contact{margin-bottom: 2rem;}
+.art-form-contact h1{margin-bottom: 2rem;font-size: 1.5em;font-weight: 400;}
+.form-contact{position: relative;width: 60%;margin: 0 20%;float: left;}
+.form-contact .form-group{width: 100%;float: left;margin: 0.5rem;}
+.form-contact .form-group .email{width: 46.5%;float: left;margin-right: 2%; }
+.form-contact .form-group .phone{width: 46.5%;float: left;}
+.form-contact  input{ width: 95%;outline: none; height: 2.5rem;padding-left: 1.5rem;float: left;outline: none;border: 1px solid #222;margin: 0.5 5% 0.5 0;}
+.form-contact input::placeholder{ color: #222;font-weight: bold;}
+.form-contact .form-group textarea{outline: none; width: 95%;float: left;padding-left: 1.5rem;border: 1px solid #222;}
+.form-contact .form-group textarea::placeholder{color: #222;font-weight: bold;}
+.form-contact .form-group .btnContact{width: 30%;background: transparent; color: #222;font-weight: bold;font-size: 1.4em;}
+.form-contact .form-group .btnContact:hover{color: #fff;background: #222;}
 /*----------------------RECEITA SINGLE ----------------------*/
 .main-single-receita{padding: 100px 0;}
