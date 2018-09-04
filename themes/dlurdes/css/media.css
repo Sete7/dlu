@@ -149,6 +149,8 @@
     /*----------MENU ------------*/
     .menu{display: none;}
     .menu-right {display: none;}
+    /*--------------SINGLE CATEGORIA-------------*/
+    .desc-sg{    width: 100%; float: left;text-align: left;}
 }
 
 @media(max-width: 1060px){
@@ -234,10 +236,18 @@
     
     /*----------------------SINGLE CARDAPIO --------------*/
     .thumb-singlo-cad{width: 100%;}
+    /*---------------------PAGE CARDAPIO ------------------*/
+    .box-cardapio{width: 100%;margin-right: 0;}
+    .aside-cad{width: 100%;float: left;padding-top: 1rem;}
     
     /*------------------------CONTATO ---------------------*/
     .block-contact {width: calc(50% - 20px);}
-
+    /*--------------------- SINGLE CATEGORIA ---------------*/
+    .box-more-menu { width: 100%; margin-right: 0;}
+    .more-menu { width: 100%; float: left; padding-top: 1rem;}
+    .desc-sg { width: 80%;}
+    .box-search{display: none;}
+    .box-news-single{display: none;}    
 }
 @media(max-width: 800px){
     .box-logo {margin: -3% 58%;}

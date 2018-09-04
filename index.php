@@ -88,7 +88,7 @@ require_once './app/config.php';
                         </li>
 
                         <li>
-                            <a href="<?= HOME; ?>/evento" title="Eventos">Eventos</a>
+                            <a href="<?= HOME; ?>/galeria" title="Galeria">Galeria</a>
                         </li>                        
                         <li>
                             <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
@@ -133,7 +133,7 @@ require_once './app/config.php';
                                 <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                             </li>
                             <li>
-                                <a href="<?= HOME; ?>/evento" title="Eventos">Eventos</a>
+                                <a href="<?= HOME; ?>/galeria" title="Galeria">Galeria</a>
                             </li>
                             <li>
                                 <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
