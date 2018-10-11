@@ -23,6 +23,10 @@ class ImagemController {
             return null;
         }
     }
+    
+    public function ListarImagensPost($postCod, $inicio = null, $quantidade = null) {
+        return $this->imagemDAO->ListarImagensPost($postCod, $inicio, $quantidade);
+    }
 
     public function VerificarArquivoExiste($postCod, $imagemCod) {
         if ($postCod > 0 && $imagemCod > 0) {

@@ -46,12 +46,4 @@ class CategoriaController {
     public function RetornaQtdCategoria() {
         return $this->categoriaDAO->RetornaQtdCategoria();
     }
-    
-     public function retornaCategoriaImagem($cod) {
-         return $this->categoriaDAO->retornaCategoriaImagem($cod);
-     }
-     
-      public function AlterarImagem($cod, $thumb) {
-          return $this->categoriaDAO->AlterarImagem($cod, $thumb);
-      }
 }

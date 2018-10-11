@@ -28,7 +28,7 @@
     #animation { margin-left: 379px; margin-top: 5px}
     .box-interation .btn-slider { margin-right: 2rem;}
     #animation { margin-left: 555px; margin-top: 20px;}
-    
+
     /*----------------QUEM SOMOS--------------*/
     .article-about{width: 100%;}    
 }
@@ -143,6 +143,11 @@
     .sidebarBtn.toggle span{background: transparent;}
     .sidebarBtn.toggle span:before{top: 24px;transform: rotate(40deg);}
     .sidebarBtn.toggle span:after{top: 24px;transform: rotate(140deg);}
+    /* CONTATO */
+    .bg-single-top { width: 100%;height: 6rem;}
+    /* GALERIA */
+    .thumb-asd-alm {width: 100%;height: auto;}
+    .thumb-asd-alm img {width: 100%;height: 7rem;}
 }
 
 @media(max-width: 1176px){
@@ -151,6 +156,8 @@
     .menu-right {display: none;}
     /*--------------SINGLE CATEGORIA-------------*/
     .desc-sg{    width: 100%; float: left;text-align: left;}
+    /* GALERIA */
+    .box-thumb-galery {width: calc(33.3333333333% - 20px);}
 }
 
 @media(max-width: 1060px){
@@ -170,7 +177,7 @@
 
     .lista-pratos .box-list-prato .box-desc-prato h1 {width: 100%;}
     .box-pratos { width: 80%;height: auto; margin: 125px 10%;}
-    
+
     .thumb-cad{width: calc(33.33333333333333% - 20px);}
     .box-our-serv{width: calc(33.33333333333333% - 20px);}
 }
@@ -180,7 +187,7 @@
     #animation { margin-left: 495px;margin-top: 8px;}
     .control-two{position: relative; top: -60px;}
     .control-three{position: relative; top: -60px;}
-    
+
     /*-------------- SINGLE CARDAPIO --------------*/
     .a-thumb-lunch{width: calc(25% - 20px);}
 }
@@ -198,7 +205,7 @@
     .box-interation{display: none;}
     /*------------------------CARDÁPIO----------------*/
     .box-plates {width: calc(50% - 50px); margin: 40px 25px;}
- 
+
 
 }
 @media(max-width: 900px){
@@ -230,16 +237,16 @@
 
     /*----------------QUEM SOMOS--------------*/    
     .box_thumb_quem{width: calc(33.33333333333333% - 20px); margin: 30px 10px;float: left;}
-    
+
     /*------------------------BLOG-----------*/
     .box-thum-blog{float: left;width: calc(50% - 20px);margin: 40px 10px;}
-    
+
     /*----------------------SINGLE CARDAPIO --------------*/
     .thumb-singlo-cad{width: 100%;}
     /*---------------------PAGE CARDAPIO ------------------*/
     .box-cardapio{width: 100%;margin-right: 0;}
     .aside-cad{width: 100%;float: left;padding-top: 1rem;}
-    
+
     /*------------------------CONTATO ---------------------*/
     .block-contact {width: calc(50% - 20px);}
     /*--------------------- SINGLE CATEGORIA ---------------*/
@@ -248,6 +255,14 @@
     .desc-sg { width: 80%;}
     .box-search{display: none;}
     .box-news-single{display: none;}    
+    /* GALERIA */
+    .sec-galery {width: 100%;}
+    .aside-galery {width: 100%;margin-top: 2rem;}
+    .thumb-asd-alm {width: 7rem;height: auto;margin-right: 1rem;}
+
+    /*------------------ RESERVA -------------------*/
+    .box-cadastrar{width: 100%;border-right: 0;}
+    .box-info-reservation{display: none;}
 }
 @media(max-width: 800px){
     .box-logo {margin: -3% 58%;}
@@ -257,14 +272,14 @@
     .box-pratos {width: 90%; height: auto; margin: 125px 5%;}
     .form-newsletter input {width: 80%;}
     .form-newsletter .btn-news {width: 80%;}
-    
+
     /*----------------QUEM SOMOS--------------*/    
     .box_thumb_quem{width: calc(50% - 20px); margin: 30px 10px;float: left;}
-    
+
     /*---------------- CARDÁPIO --------------*/ 
     .thumb-cad{width: calc(50% - 50px); margin: 40px 25px;}
     .box-our-serv{width: calc(50% - 50px); margin: 40px 25px;}
-    
+
     /*-------------- SINGLE CARDAPIO --------------*/
     .a-thumb-lunch{width: calc(33.33333333333333% - 20px);}
     /*---------------- CONTATO ----------------------*/
@@ -282,12 +297,14 @@
     .banner-mobile .mirros-color{position: absolute;top: 0;width: 100%;height: 100%;float: left;background: rgba(0,0,0,0.2);z-index: 2;}
     .banner-mobile{display: block;position: relative;}  
     .mobi-400{display: none;}
-    
-     /*------------------------CARDÁPIO----------------*/
+
+    /*------------------------CARDÁPIO----------------*/
     .box-plates {width: calc(100% - 50px); margin: 40px 25px;}
-    
+
     /*------------------- SINGLE CARDAPIO ----------------*/
     .box-thumb-on img {width: 15.9%;}
+    /* GALERIA */
+    .box-thumb-galery {width: calc(50% - 20px);}
 }
 @media(max-width: 650px){
     .sec-post h1 {font-size: 2em;}  
@@ -313,12 +330,19 @@
     .time-function h1 {font-size: 1.3em;}
     .time-function .dye { width: calc(100% - 20px); margin: 2rem 10px;}
     .box-logo-footer { margin: 0.5rem 0;}
-    
+
     .sec-artigo .header-title h1{font-size: 2em;}
     .desc-article .conf-h2{font-size: 2em;}
-    
+
     /*-------------- SINGLE CARDAPIO --------------*/
     .a-thumb-lunch{width: calc(50% - 20px);}
+
+    .bg-single-top {width: 100%;height: 9rem;}
+    /*---------------- RESERVA --------------------------*/
+    .main-reserva .content{width: 98%;margin: 0 1%;}
+    .art-reservation{padding: 1rem 0;}
+    .box-cadastrar .form-reserva .nome, .sobre, .phone_rs, .sapp_rs, .qtd_rs, .date_rs, .time_rs, .dt_niver_rs{width: 100%;}
+    .box-cadastrar  .time_rs{margin-bottom: 1rem;}
 }
 @media(max-width: 585px){
     /*------------------- SINGLE CARDAPIO ----------------*/
@@ -328,23 +352,25 @@
     .lista-pratos .box-list-prato .box-desc-prato .text-title-1 .price {position: relative;}
     .grid-pratos .camada-color-plates  h1{display: block;position: absolute;bottom: 50px;}
     .grid-pratos .camada-color-plates p{display: block;position: absolute;bottom: 20px;}
-     /*---------------- CARDÁPIO --------------*/ 
+    /*---------------- CARDÁPIO --------------*/ 
     .thumb-cad{width: 100%; margin: 40px 0;}
     .box-our-serv{width: 100%; margin: 40px 0;}
-    
+
     /*--------------------BLOG----------------*/
     .sec-blog .conf-h1{font-size: 2em;}
     .box-thum-blog{float: left;width: 100%;margin: 40px 0;}
-    
+
     .reply-user{padding-left: 2rem;}
-    
+
     .art-single-cad h1{font-size: 2em;}
-     /*------------------------CONTATO ---------------------*/
-     .sec-contato h1{font-size: 2em;}
+    /*------------------------CONTATO ---------------------*/
+    .sec-contato h1{font-size: 2em;}
     .block-contact {width: 100%;}
     .form-contact .form-group .email {width: 95%;margin-bottom: 1.5rem;}
     .form-contact .form-group .phone {width: 95%;}
-    
+    /* GALERIA */
+    .box-thumb-galery {width: calc(100% - 20px);}
+
 }
 @media(max-width: 450px){
     .box-logo{position: relative;margin: 20% 0;    left: 10px;}
@@ -366,26 +392,28 @@
     .ul-grid-instam li {width: 7rem;} 
     .banner-mobile .mobi-700{display: none;}
     .banner-mobile .mobi-400{display: block;width: 100%;background-size: cover;}
-    
+
     .main-cardapio .conf-h1 {font-size: 2em;}
     .art-cardapio .btn-black {padding: 0.3rem 2rem;}
     .box-plates {width: 100%; margin: 40px 0;}
-    
+
     /*----------------QUEM SOMOS--------------*/  
     .social-about a{display: inline-block;color: #fff;position: relative;}
     .conf-h2{text-align: center;}
     .box_thumb_quem{width: 100%; margin: 30px 10px;float: left;}    
     .thumb-quem-top-a{display: none;}
     .thumb-quem-top{display: block;}
-    
+
     /*-------------- SINGLE CARDAPIO --------------*/
     .box-thumb-on img { width: 30.5%;}
     .a-thumb-lunch{width: calc(100% - 20px);}
-    
+
 }
 
 @media(max-width: 360px){
-
+    /* GALERIA */
+    .thumb-asd-alm {width: 100%;height: auto;}
+    .thumb-asd-alm img {width: 100%;height: 8rem;}
 }
 
 

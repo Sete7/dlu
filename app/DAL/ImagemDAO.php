@@ -17,7 +17,7 @@ class ImagemDAO {
                 $sql = "INSERT INTO imagens (imagem, post_cod) VALUES (:imagem, :postcod)";
                 $param = array(
                     ":imagem" => $i->getImagem(),
-                    ":postcod" => $i->getProduto()->getProduto_cod()
+                    ":postcod" => $i->getProduto()->getCod()
                 );
                 if (!$this->pdo->ExecuteNonQuery($sql, $param)) {
                     $erros++;
@@ -45,6 +45,36 @@ class ImagemDAO {
             $sql = "SELECT * FROM imagens WHERE post_cod = :postcod";
             $param = array(
                 ":postcod" => $postCod
+            );
+
+            $dt = $this->pdo->ExecuteQuery($sql, $param);
+            $listaImagens = [];
+
+            foreach ($dt as $dr) {
+                $imagem = new Imagem();
+                $imagem->setCod($dr["cod"]);
+                $imagem->setImagem($dr["imagem"]);
+                $imagem->setProduto($dr["post_cod"]);
+
+                $listaImagens[] = $imagem;
+            }
+
+            return $listaImagens;
+        } catch (PDOException $ex) {
+            if ($this->debug) {
+                echo "ERRO: {$ex->getMessage()} LINE: {$ex->getLine()}";
+            }
+            return null;
+        }
+    }
+    
+    public function ListarImagensPost($postCod, $inicio = null, $quantidade = null) {
+        try {
+            $sql = "SELECT * FROM imagens WHERE post_cod = :postcod LIMIT :inicio, :quantidade";
+            $param = array(
+                ":postcod" => $postCod,
+                ":inicio" =>  $inicio,
+                ":quantidade" => $quantidade  
             );
 
             $dt = $this->pdo->ExecuteQuery($sql, $param);

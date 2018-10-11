@@ -1,6 +1,8 @@
-<?php
-
-define("HOME", "http://localhost/projetos/dlurdes");
+<?php 
+set_time_limit(0); 
+session_start();
+ob_start();
+define('HOME', 'http://localhost/projetos/dlurdes');
 define('THEME', 'dlurdes');
 
 define('INCLUDE_PATH', HOME . '/themes/' . THEME);
@@ -23,8 +25,10 @@ function __autoload($Class) {
     endforeach;
 
     if (!$iDir):
-        trigger_error("Não foi possível incluir classe {$Class}.php", E_USER_ERROR);
+        trigger_error("Não foi possível incluir {$Class}.php", E_USER_ERROR);
         die;
     endif;
 }
+
+
 

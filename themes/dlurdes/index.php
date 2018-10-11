@@ -1,49 +1,52 @@
+<?php
+$receitaControler = new ReceitaController();
+$pizzaController = new PizzaController();
+$sliderController = new SliderController();
+$helper = new Helper();
+?>
 <!--------------------------------- SLIDE SITE -------------------------------->
 <main class="main_content container">
-    <?php
-//        $tamMobile = "Grande";
-//        $sliderMobile = $sliderController->ListarTamanhoSlider($tamMobile);
-//        if ($sliderMobile == null):
-//        else:
-    ?>
+
     <section class="slider">
         <h1 class="font-zero">Últimas do site:</h1>
         <div class="slider_controll">
             <div class="slide_nav back"><i class="fa fa-chevron-left"></i></div>
             <div class="slide_nav go"><i class="fa fa-chevron-right"></i></div>
         </div>            
+        <?php
+        $controle_active = 2;
+        $tamMobile = "g";
+        $sliderMobile = $sliderController->ListarTamanhoSlider($tamMobile);
+        foreach ($sliderMobile as $sli):
+            if ($controle_active == 2):
+                ?>
+                <article class="slider_item first">
+                    <h1 class="font-zero">Banner</h1>
+                    <a href="#"  title="" class="box-slider">
+                        <picture alt="Restaurante Mineiro D'Lurdes">
+                            <source media="(min-width: 1280px)" srcset="tim.php?src=uploads/01.jpg&w=1366&h=400" />
+                        </picture> 
+                        <img src="<?= HOME; ?>/upload/<?= $sli->getSlider_thumb(); ?>" alt="Banner" title="Restaurante Mineiro D'Lurdes" style="float: left;"/>                 
 
-        <?php
-//                $controle_active = 2;
-//                foreach ($sliderMobile as $sli):
-//                    if ($controle_active == 2):
-        ?>
-        <article class="slider_item first">
-            <h1 class="font-zero">Banner</h1>
-            <a href="#"  title="" class="box-slider">
-                <picture alt="Fortaleza">
-                    <source media="(min-width: 1280px)" srcset="tim.php?src=uploads/01.jpg&w=1366&h=400" />
-                </picture> 
-                <img src="<?= REQUIRE_PATH; ?>/img/slider-banne1.jpg" alt="Banner" title="Promoções D'Lurdes"/>                 
-            </a>
-        </article>
-        <?php
-//                        $controle_active = 1;
-//                    else:
-        ?>
-        <article class="slider_item">
-            <h1 class="font-zero">Banner</h1>
-            <a href="#"  title="" class="box-slider">
-                <picture alt="Fortaleza">
-                    <source media="(min-width:1600px)" srcset="tim.php?src=uploads/01.jpg&w=200&h=600">
-                </picture>    
-                <img src="<?= REQUIRE_PATH; ?>/img/slider-banne2.jpg"  alt="Banner" title="Rodizio D'Lurdes"/>                
-            </a>
-        </article>
-        <?php
-//                    endif;
-//                endforeach;
-        ?>              
+                    </a>
+                </article>
+                <?php
+                $controle_active = 1;
+            else:
+                ?>
+                <article class="slider_item">
+                    <h1 class="font-zero">Banner</h1>
+                    <a href="#"  title="" class="box-slider">
+                        <picture alt="">
+                            <!--<source media="(min-width:1600px)" srcset="tim.php?src=uploads/01.jpg&w=200&h=600">-->
+                        </picture>    
+                        <img src="<?= HOME; ?>/upload/<?= $sli->getSlider_thumb(); ?>" alt="Banner" title="" style="float: left;"/>                
+                    </a>
+                </article>
+            <?php
+            endif;
+        endforeach;
+        ?>        
     </section>
     <?php
 //        endif;
@@ -55,12 +58,26 @@
     </div>
 </main>
 <main class="container">
-    <div class="banner-mobile">         
-        <img src="<?= REQUIRE_PATH; ?>/img/banner-mob-to-p-a.jpg"  class="mobi-700" alt="Banner" title="Rodizio D'Lurdes"/>
-        <img src="<?= REQUIRE_PATH; ?>/img/banner-mob-top-320.jpg" class="mobi-400"  alt="Banner" title="Rodizio D'Lurdes"/>
-        <div class="mirros-color"></div>
-    </div>
+    <?php
+    $controle_active = 2;
+    $tamMobile = "p";
+    $sliderMobile = $sliderController->ListarTamanhoSlider($tamMobile);
+    foreach ($sliderMobile as $sli):
+        if ($controle_active == 2):
+            ?>
+            <div class="banner-mobile">         
+                <img src="<?= REQUIRE_PATH; ?>/img/banner-mob-to-p-a.jpg"  class="mobi-700" alt="Banner" title="Rodizio D'Lurdes"/>
+                <img src="<?= HOME; ?>/upload/<?= $sli->getSlider_thumb(); ?>" class="mobi-400"  alt="Banner" title="Rodizio D'Lurdes"/>              
+                <div class="mirros-color"></div>
+            </div>
+            <?php
+        endif;
+    endforeach;
+    ?>        
 </main>
+
+
+
 <!--------------------------------------------------CONTEUDO----------------------------------------->
 <main class="main-home container">
     <section class="sec-post content">
@@ -209,28 +226,31 @@
                     <div class="jcarousel">
                         <ul>
                             <?php
-                            for ($i = 1; $i <= 8; $i++) {
-                                ?>                                    
-                                <li class="li-desc-rec">                                         
-                                    <img src="<?= REQUIRE_PATH; ?>/img/bf-cv.jpg" width="600" height="400" alt="BIFE A CAVALO" title="BIFE A CAVALO"/>
-                                    <div class="box-desc-rec">
-                                        <div class="sec-title">
-                                            <h2>Bife a cavalo</h2>
-                                            <p class="txt-rec">
-                                                <!--                                                    Culinária fácil, aprenda a preparar
-                                                                                                    pratos básicos da cozinha brasileira-->
-                                                Culinária fácil...
-                                            </p>
-                                        </div>
-                                        <div class="box-btn-rec">
-                                            <a href="<?= HOME; ?>/receitas" class="btn-rec">
-                                                Veja Mais
-                                            </a>
-                                        </div>
+                            $listarReceita = $receitaControler->ListarReceita(0, 6);
+                            foreach ($listarReceita as $lstReceita):
+                            ?>                                    
+                            <li class="li-desc-rec"> 
+                                <img src="<?= HOME; ?>/tim.php?src=upload/<?= $lstReceita->getThumb(); ?>&w=300&h=200&zc=0" alt="<?= $lstReceita->getTitulo(); ?>" title="<?= $lstReceita->getTitulo(); ?>" style="float: left;"/>                 
+                                <div class="box-desc-rec">
+                                    <div class="sec-title">
+                                        <h2><?php echo  $helper->Words(html_entity_decode($lstReceita->getTitulo()),3); ?></h2>
+                                        
+                                        
+                                        <p class="txt-rec">
+                                            <!--                                                    Culinária fácil, aprenda a preparar
+                                                                                                pratos básicos da cozinha brasileira-->
+                                            Culinária fácil...
+                                        </p>
                                     </div>
-                                </li>
-                                <?php
-                            }
+                                    <div class="box-btn-rec">
+                                        <a href="<?= HOME; ?>/receitas" class="btn-rec">
+                                            Veja Mais
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php
+                            endforeach;
                             ?> 
                         </ul>
                     </div>
@@ -254,26 +274,27 @@
 
             <div class="lista-pratos">
                 <?php
-                for ($i = 1; $i <= 7; $i++) {
+                $listarPizza = $pizzaController->ListarPizza(0, 4);
+                foreach ($listarPizza as $listPz):
                     ?>
                     <article class="box-list-prato">
-                        <a class="box-thumb-list"  href="<?= HOME; ?>/single-categoria">                                                 
-                            <img src="<?= REQUIRE_PATH; ?>/img/pizza.jpg"  alt="RECOMENDAÇÃO DO CHEFE" title="PIZZA PORTUGUESA "/>
+                        <a class="box-thumb-list"  href="<?= HOME; ?>/single-pizza/<?= $listPz->getUrl(); ?>">                                                 
+                            <img src="<?= HOME; ?>/tim.php?src=upload/<?= $listPz->getThumb(); ?>&w=400&h=400&zc=0" alt="<?= $listPz->getTitulo(); ?>" title="<?= $listPz->getTitulo(); ?>" style="float: left;"/>                 
 
                         </a>
                         <div class="box-desc-prato">
-                            <h1><a href="<?= HOME; ?>/single-categoria">RECOMENDAÇÃO DO CHEFE</a></h1>
-                            <h2 class="text-title-1"> PIZZA PORTUGUESA <span>Segunda-feira, 01/09/2018</span> <span class="price">R$30.95</span></h2>
+                            <h1><a href="<?= HOME; ?>/single-pizza/<?= $listPz->getUrl(); ?>">RECOMENDAÇÃO DO CHEFE</a></h1>
+                            <h2 class="text-title-1"> <?= $listPz->getTitulo(); ?><span class="price"><?= $listPz->getValor(); ?></span></h2>
                             <p class="text-title-2">
-                                Presunto, ovos cozidos, cebola e azeitonas pretas...
+                               <?= $helper->Words(html_entity_decode($listPz->getDescricao()), 4); ?>
                             </p>
                         </div>                                
                     </article>
                     <?php
-                }
+                    endforeach;
                 ?>
                 <div class="box-lt-receitas">
-                    <a class="btn-lt-receitas" href="<?= HOME; ?>/single-categoria"> VEJA MAIS</a>
+                    <a class="btn-lt-receitas" href="<?= HOME; ?>/all-pizzas"> MENU PIZZA</a>
                 </div > 
             </div>
             <div class="clear"></div>
@@ -364,32 +385,8 @@
 
     <section class="gallery-restaurant container">
         <h1 class="font-zero">Galeria</h1>
-        <div class="gallery">
-            <div class="jcarousel-wrapper">
-                <div class="box-controlslide control-three">
-                    <!-- Prev/next controls -->
-                    <a href="#" class="jcarousel-control-next next"><i class="fa fa-long-arrow-left"></i></a>
-                    <a href="#" class="jcarousel-control-prev prev"><i class="fa fa-long-arrow-right"></i></a>
-                </div>
-                <!-- Carousel -->
-                <div class="jcarousel">
-                    <ul>
-                        <?php
-                        for ($i = 1; $i <= 8; $i++) {
-                            ?>                                    
-                            <li class="li-desc-rec">                                           
-                                <img src="<?= REQUIRE_PATH; ?>/img/restaurant.jpg" alt="Restaurante de D'Lurdes" title="Nosso Restaurante"/>
-                                <div class="">
-
-                                </div>
-                            </li>
-                            <?php
-                        }
-                        ?> 
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div> 
+        <?php
+            require_once 'page/slyder-restaurante.php';
+        ?> 
     </section>
 </main>

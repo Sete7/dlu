@@ -15,13 +15,14 @@ class Banco {
         $this->debug = true;
         
 //        $this->server = "127.0.0.1";
-//        $this->user = "viagens_1";
-//        $this->password = "a1b2c3d4@";
-//        $this->database = "viagens_1";
+//        $this->user = "dlurdes_1";
+//        $this->password = "a1b2c3d4"; 
+//        $this->database = "dlurdes_1";
         
+       $this->server = "127.0.0.1";
         $this->user = "root";
         $this->password = "";
-        $this->database = "3sviagens";
+        $this->database = "dlurdes";
     }
 
     /**

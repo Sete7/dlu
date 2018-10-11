@@ -29,56 +29,154 @@
 
                 <article class="art-cardapio container txt-cente">
                     <h2 class="txt-left">CARDÁPIO PARA O ALMOÇO</h2>
-                    <?php
-                    for ($i = 1; $i <= 7; $i++):
-                        ?>
-                        <div class="thumb-cad">            
-                            <a href="<?= HOME; ?>/single-cardapio">            
-                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
-
-                                <div class="desc-card box txt-cente font-bolder pd-topxbottom">
-                                    <span>Segunda-feira, <?= date("d/m/Y, H:s"); ?> </span>
-                                    <h2 class="ft-sz-one-fv fw-c">Prato Tradicional</h2>
-                                    <p class="ft-sz-one fw-a">Carne de Bife</p>
-                                    <p class="ft-sz-one-fv">
-                                        <span> R$ </span> 12.00
-                                    </p> 
-                                </div>
-                            </a>
-                        </div>  
-                        <?php
-                    endfor;
-                    ?>
-                    <div class="box-btn-black">
-                        <a href="<?= HOME; ?>/single-categoria" class="btn-black ft-sz-two">Veja Mais</a>
+                    <hr class="hr-page">
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Segunda-feira</span>
                     </div>
-                </article>
-
-                <article class="art-cardapio container txt-cente"> 
-                    <h2 class="txt-left">CARDÁPIO PARA O JANTAR</h2>
                     <?php
-                    for ($i = 1; $i <= 7; $i++):
+                    for ($i = 1; $i <= 4; $i++):
                         ?>
-                        <div class="thumb-cad">            
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
                             <a href="<?= HOME; ?>/single-cardapio"> 
-                                <img  class="radios-a"  src="<?= REQUIRE_PATH; ?>/img/food-6.jpg" alt="" title="Imagem" />
-                                <div class="desc-card box txt-cente font-bolder pd-topxbottom">
-                                    <span>Segunda-feira, <?= date("d/m/Y, H:s"); ?></span>
-                                    <h2 class="ft-sz-one-fv fw-c">Prato Tradicional</h2>
-                                    <p class="ft-sz-one fw-a">Carne de Bife</p>
-                                    <p class="ft-sz-one-fv">
-                                        <span> R$ </span> 12.00
-                                    </p> 
-                                </div>
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
                             </a>
                         </div>  
                         <?php
                     endfor;
                     ?>
-                    <div class="box-btn-black">
-                        <a href="<?= HOME; ?>/single-categoria" class="btn-black ft-sz-two">Veja Mais</a>
-                    </div> 
                 </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Terça-feira</span>
+
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Quarta-feira</span>
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Quinta-feira</span>
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Sexta-feira </span>
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Sabádo-feira </span>
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+                <hr class="hr-page">
+                <!--          ---------------------------------------------------------------------------------------------------------      -->
+                <article class="art-cardapio container txt-cente">                   
+                    <div class="desc-card box txt-left font-bolder pd-topxbottom">
+                        <span>Domingo</span>
+                    </div>
+                    <?php
+                    for ($i = 1; $i <= 4; $i++):
+                        ?>
+                        <div class="thumb-cad">  
+                            <div class="desc-card box txt-cente font-bolder pd-topxbottom">
+                                <p class="ft-sz-one fw-a">Carne de Bife</p>
+                            </div>
+                            <a href="<?= HOME; ?>/single-cardapio"> 
+                                <img  class="radios-a" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                            </a>
+                        </div>  
+                        <?php
+                    endfor;
+                    ?>
+                </article>
+               <hr class="hr-page">
+                <!---------------------------------------------------------------------------------------------------------------------------------------->
 
                 <article class="art-cardapio container txt-cente"> 
                     <h2 class="txt-left">RODÍZIO DE PIZZA</h2>
@@ -145,11 +243,11 @@
                     ?>
                 </div>
             </aside>
-            
+
         </div>
-        
-    
-        
+
+
+
         <article class="our-services container">
             <div class="header-title txt-cente space-mb-d">
                 <h1 class="conf-h1">Outros Serviços</h1>

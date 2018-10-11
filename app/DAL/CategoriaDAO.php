@@ -14,9 +14,9 @@ class CategoriaDAO {
 
     public function Cadastrar(Categoria $categoria) {
         try {
-            $sql = "INSERT INTO categoria (titulo, url, descricao, status, data) VALUES(:titulo,:url, :descricao, :status, :data)";
+            $sql = "INSERT INTO categoria (titulo,url, descricao, status, data) VALUES(:titulo, :url, :descricao, :status, :data)";
             $param = array(
-                ":titulo" => $categoria->getTitulo(),                
+                ":titulo" => $categoria->getTitulo(),          
                 ":url" => $categoria->getUrl(),
                 ":descricao" => $categoria->getDescricao(),
                 ":status" => $categoria->getStatus(),
@@ -37,7 +37,8 @@ class CategoriaDAO {
             $sql = "SELECT * FROM categoria ORDER BY cod DESC LIMIT :inicio, :quantidade";
             $param = array(
                 ":inicio" => $inicio,
-                ":quantidade" => $quantidade
+                ":quantidade" => $quantidade,
+        
             );
             $dt = $this->pdo->ExecuteQuery($sql, $param);
 
@@ -45,7 +46,7 @@ class CategoriaDAO {
 
             foreach ($dt as $pts) {
                 $categoria = new Categoria();
-                $categoria->setCod($pts['cod']);                
+                $categoria->setCod($pts['cod']);          
                 $categoria->setTitulo($pts['titulo']);
                 $categoria->setDescricao($pts['descricao']);
                 $categoria->setStatus($pts['status']);
@@ -72,7 +73,7 @@ class CategoriaDAO {
 
             foreach ($dt as $pts) {
                 $categoria = new Categoria();
-                $categoria->setCod($pts['cod']);               
+                $categoria->setCod($pts['cod']);   
                 $categoria->setTitulo($pts['titulo']);
                 $categoria->setDescricao($pts['descricao']);
                 $categoria->setStatus($pts['status']);
@@ -135,7 +136,7 @@ class CategoriaDAO {
             $dt = $this->pdo->ExecuteQueryOneRow($sql, $param);
 
             $categoria = new Categoria();
-            $categoria->setCod($dt['cod']);           
+            $categoria->setCod($dt['cod']);
             $categoria->setTitulo($dt['titulo']);
             $categoria->setStatus($dt['status']);
             $categoria->setDescricao($dt['descricao']);
@@ -157,7 +158,7 @@ class CategoriaDAO {
             $dt = $this->pdo->ExecuteQueryOneRow($sql, $param);
 
             $categoria = new Categoria();
-            $categoria->setCod($dt['cod']);            
+            $categoria->setCod($dt['cod']);
             $categoria->setTitulo($dt['titulo']);
             $categoria->setStatus($dt['status']);
             $categoria->setDescricao($dt['descricao']);
@@ -189,44 +190,4 @@ class CategoriaDAO {
             endif;
         }
     }
-    
-    //retorno de produto com imagem
-    public function retornaCategoriaImagem($cod) {
-        try {
-            $sql = "SELECT cod, titulo, thumb FROM categoria WHERE cod = :cod";
-            $param = array(":cod" => $cod);
-            //Data Table
-            $dt = $this->pdo->ExecuteQueryOneRow($sql, $param);
-            $categoria = new Produto();
-            $categoria->setCod($dt['cod']);
-            $categoria->setThumb($dt['thumb']);
-            $categoria->setTitulo($dt['titulo']);
-            
-            return $categoria;
-        } catch (PDOException $e) {
-            if ($this->debug):
-                echo "Erro {$e->getMessage()}, LINE {$e->getLine()}";
-            else:
-                return null;
-            endif;
-        }
-    }
-    
-    public function AlterarImagem($cod, $thumb) {
-        try {
-            $sql = "UPDATE categoria SET thumb = :thumb WHERE cod = :cod";
-            $param = array(
-                ":cod" => $cod,
-                ":thumb" => $thumb
-            );
-            return $this->pdo->ExecuteNonQuery($sql, $param);
-        } catch (PDOException $e) {
-            if ($this->debug):
-                echo "Erro {$e->getMessage()}, LINE {$e->getLine()}";
-            else:
-                return null;
-            endif;
-        }
-    }
-
 }

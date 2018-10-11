@@ -8,15 +8,15 @@ require_once './app/config.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <title>D'Lurdes Delícias de Minas, Restaurante Mineiro, Brasília, Guará.</title>        
-        <link href="<?= REQUIRE_PATH; ?>/img/favicon.fw.png" rel="shortcut icon"> 
+        <link href="<?= INCLUDE_PATH; ?>/img/favicon.fw.png" rel="shortcut icon"> 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-        <link href="<?= REQUIRE_PATH; ?>/css/boot.css" rel="stylesheet" type="text/css"/>
-        <link href="<?= REQUIRE_PATH; ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="<?= REQUIRE_PATH; ?>/css/estilo.css" rel="stylesheet" type="text/css"/>
-        <link href="<?= REQUIRE_PATH; ?>/css/jcarousel.skeleton.css" rel="stylesheet" type="text/css"/>
-        <link href="<?= REQUIRE_PATH; ?>/css/media.css" rel="stylesheet" type="text/css"/>        
+        <link href="<?= INCLUDE_PATH; ?>/css/boot.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= INCLUDE_PATH; ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= INCLUDE_PATH; ?>/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= INCLUDE_PATH; ?>/css/jcarousel.skeleton.css" rel="stylesheet" type="text/css"/>
+        <link href="<?= INCLUDE_PATH; ?>/css/media.css" rel="stylesheet" type="text/css"/>        
 
     </head>
     <body>
@@ -88,7 +88,7 @@ require_once './app/config.php';
                         </li>
 
                         <li>
-                            <a href="<?= HOME; ?>/galeria" title="Galeria">Galeria</a>
+                            <a href="<?= HOME; ?>/all-single" title="Cardápio Pizzas">Pizzas</a>
                         </li>                        
                         <li>
                             <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>
@@ -133,7 +133,7 @@ require_once './app/config.php';
                                 <a href="<?= HOME; ?>/blog" title="Blog">Blog</a>
                             </li>
                             <li>
-                                <a href="<?= HOME; ?>/galeria" title="Galeria">Galeria</a>
+                                <a href="<?= HOME; ?>/all-pizzas" title="Cardápio Pizzas">Pizzas</a>
                             </li>
                             <li>
                                 <a href="<?= HOME; ?>/contato" title="Contato">Contato</a>

@@ -31,7 +31,44 @@
 
 
         <aside class="aside-galery">
-            <h1 class="conf-h1 space-mb-a">ASIDE</h1>
+            <h1 class="conf-h3 space-mb-a">Ultimas do Site</h1>
+
+            <article class="box-asd-thumb">
+                <?php
+                for ($i = 1; $i <= 5; $i++):
+                    ?>
+                    <a class="box-asd-alm" href="#" >
+                        <div class="thumb-asd-alm">
+                            <img  class="" src="<?= REQUIRE_PATH; ?>/img/img-cad-a.jpg" alt=""/>
+                        </div>
+                        <div class="desc-asd-alm">
+                            <h2>
+                                Titulo Almoço
+                            </h2>
+                            <p>
+                                Descricão almoço...
+                            </p>
+                        </div>
+                    </a>
+                    <?php
+                endfor;
+                ?>
+            </article>
+            <article class="">
+                <h1>Social</h1>
+                <div class="box-asd-social" >
+                    <a href="https://www.facebook.com/dlurdesguara/?ref=page_internal"  target="_blank">
+                        <span>
+                            <i class="fa fa-facebook-f"></i>                            
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/explore/locations/227506531050754/dlurdes-guara/?hl=pt" target="_blank">
+                        <span>                        
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+            </article>
         </aside>
     </div>
 </main>

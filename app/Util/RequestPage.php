@@ -9,6 +9,11 @@ $arrayPaginas = array(
     "categoria" => "View/Categoria/categoria.phtml", 
     "categoriaListar" => "View/Categoria/listaCategoria.phtml",
     "categoriaEditar" => "View/Categoria/editarCat.phtml"    
+//    "sub" => "View/Subcategoria/subcategoria.phtml",
+//    "listarSubCategoria" => "View/Subcategoria/listarSubCategoria.phtml",
+//    "produto" => "View/Produto/produto.phtml",
+//    "listarProduto" => "View/Produto/listarProduto.phtml",
+//    "marca" => "View/Marca/marca.phtml"
 );
 
 if ($pagina) {

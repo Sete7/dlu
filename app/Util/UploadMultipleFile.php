@@ -1,6 +1,7 @@
 <?php
 
-class Upload {
+
+class UploadMultipleFile {
 
     private $arrFormatImages;
     private $arrFormatFiles;
@@ -8,7 +9,9 @@ class Upload {
     public function __construct() {
         $this->arrFormatImages = array(
             "image/jpeg",
-            "image/png"
+            "image/png",
+            "image/jpg",
+            "image/JPG"
         );
 
         $this->arrFormatFiles = array(
@@ -67,7 +70,6 @@ class Upload {
                 }
             }
         }
-
         if ($invalidFormat === 0) {
             return true;
         } else {
@@ -76,10 +78,8 @@ class Upload {
     }
 
     public function LoadFile($path, $file, $renameFile = true) {
-
         $arrayNames = [];
         $finalName = "";
-
         for ($i = 0; $i < count($file["name"]); $i++) {
             if ($renameFile) {
                 $explode = explode(".", $file['name'][$i]);
@@ -87,7 +87,6 @@ class Upload {
             } else {
                 $finalName = $file['name'][$i];
             }
-
 
             if (move_uploaded_file($file['tmp_name'][$i], $path . "/" . $finalName)) {
                 $arrayNames[] = $finalName;
