@@ -21,7 +21,7 @@ if ($btnContato):
         $mailer->CharSet = utf8_decode($mensagem);
         $mailer->Host = 'mail.delurdes.com.br'; //smtp.dominio.com.br
         $mailer->Username = 'contato@dlurdes.com.br';
-        $mailer->Password = 'a1b2c3d4';
+        $mailer->Password = '';
 
         $mailer->SetFrom("$email", "$nome"); //Seu e-mail
         $mailer->AddAddress('contato@dlurdes.com.br', 'DLURDES');
